@@ -55,7 +55,7 @@ h4,.h4{
 
 
 /*---------OTHER STYLES------------*/
-.catalog .item {
+.row .item {
     max-width: 250px;
 }
 
@@ -93,7 +93,6 @@ h4,.h4{
     display: block;
 }
 /*---------/OTHER STYLES------------*/
-
 
 
 /*---------FAQ------------*/
@@ -184,45 +183,3 @@ h4,.h4{
     padding: 5px 10px;
 }
 /*---------/PRICE------------*/
-
-
-/*---------NEWS (ALL)------------*/
-.news .item {
-    border-bottom: 1px solid #a5a5a5;
-    text-align: left;
-}
-
-.news .item .date {
-    color: #6c6c6c;
-    margin-bottom: 5px;
-}
-
-.news .item .title {
-    font-size: 16px;
-}
-
-.news .item .float-container {
-    margin: 10px 0;
-}
-
-.news .item .float-container .img-container {
-    position: relative;
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 0 10px 0 0;
-}
-
-.news .item .float-container .img-container img {
-    max-width: 100px;
-    max-height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.news .item .float-container .anons {
-    width: 600px;
-}
-
-/*---------/NEWS (ALL)------------*/
