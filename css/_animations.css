@@ -1,0 +1,56 @@
+/* version: 1.0.0 */
+
+.catalog-products.test .item1 .img-container{
+    width: 240px;
+    height: 240px;
+    display: block;
+    position: relative;
+}
+
+.catalog-products.test .item1 .img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.catalog-products.test .item1 .img-container .img1{
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.catalog-products.test .item1:hover  .img-container .img1 {
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.catalog-products.test .item1 .img-container .img2{
+    position: absolute;
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.catalog-products.test .item1:hover .img-container .img2{
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

@@ -1,0 +1,111 @@
+/* version: 1.0.0 */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+    #overflow_div{
+        min-width: inherit;
+    }
+
+    footer{
+        min-width: inherit;
+    }
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .window .window_body{
+        width: 90%;
+    }
+
+    .item-form-element .title,
+    .faq.nc-form .item-form-element > span,
+    .faq.nc-form .nc-field-caption{
+        width: 20%;
+        padding-right: 2%;
+    }
+
+    .item-form-element input,
+    .item-form-element textarea,
+    .faq.nc-form textarea,
+    .faq.nc-form input[type='text'],
+    .faq.nc-form input[type='tel'],
+    .faq.nc-form input[type='email']{
+        width: 78%;
+    }
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .menu-top {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    footer{
+        height: auto;
+        position: relative;
+    }
+
+    body {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .window .window_body{
+        width: 95%;
+    }
+
+    .item-form-element .title,
+    .faq.nc-form .item-form-element > span,
+    .faq.nc-form .nc-field-caption{
+        width: 100%;
+        padding-right: 0;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .item-form-element input,
+    .item-form-element textarea,
+    .faq.nc-form textarea,
+    .faq.nc-form input[type='text'],
+    .faq.nc-form input[type='tel'],
+    .faq.nc-form input[type='email']{
+        width: 100%;
+    }
+
+    .window .close{
+        top: 5px;
+        right: 5px;
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
