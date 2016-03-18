@@ -21,6 +21,10 @@
         width: 90%;
     }
 
+    .widget-phone-popup{
+        width: 100%;
+    }
+
     .item-form-element .title,
     .faq.nc-form .item-form-element > span,
     .faq.nc-form .nc-field-caption{

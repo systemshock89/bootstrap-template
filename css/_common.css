@@ -10,13 +10,12 @@ html {
 }
 
 a {
-    color: #23527c;
+    color: #337ab7;
     text-decoration: underline;
 }
 
 a:hover,
 a:focus{
-    color: #23527c;
     text-decoration: none;
     outline: none;
 }
