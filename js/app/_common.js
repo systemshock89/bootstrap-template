@@ -61,82 +61,87 @@ $(function () {
     });
 
 
-    /* Owl Index Slider */
-    $(function () {
-        if ($(".index_slider .owl-carousel").is("div")) {
+    /* Index Owl Slider */
+    $(function() {
+        if( $(".index_slider .owl-carousel").is("div") ){
 
-            var owl = $('.index_slider .owl-carousel');
+            var owl =  $('.index_slider .owl-carousel');
 
             owl.owlCarousel({
-                singleItem: true,
-                autoPlay: 12000,
-                stopOnHover: true,
-                navigation: true,
-                responsiveBaseWidth: '.index_slider .owl-carousel',
-                transitionStyle: "backSlide"
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+                // эффект FadeUp
+                animateOut: 'owl-fadeUp-out',
+                animateIn: 'owl-fadeUp-in'
             });
 
-            owl.find('.owl-controls .owl-buttons .owl-prev').attr('title', 'Предыдущий');
-            owl.find('.owl-controls .owl-buttons .owl-next').attr('title', 'Следующий');
-
-            // Custom Navigation Events
-//                    owl.parent().find(".to_right").click(function(){
-//                        owl.trigger('owl.next');
-//                    });
-//
-//                    owl.parent().find(".to_left").click(function(){
-//                        owl.trigger('owl.prev');
-//                    })
-
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
         }
     });
-    /* /Owl Index Slider */
+    /* /Index Owl Slider */
 
 
-    /* Carousel Owl Slider */
-    $(function() {
-        if( $(".carousel_slider .owl-carousel").is("div") ){
+    /* /Carousel Owl Slider */
+    $(function () {
+        if ($(".carousel_slider .owl-carousel").is("div")) {
 
-            var owl =  $('.carousel_slider .owl-carousel'),
-                carouselNext = owl.parent().parent().find(".to_right"),
-                carouselPrev = owl.parent().parent().find(".to_left");
+            var owl = $('.carousel_slider .owl-carousel');
 
             owl.owlCarousel({
-                items : 4,
-                autoPlay : 12000,
-                stopOnHover : true,
-                responsiveBaseWidth: '.carousel_slider .owl-carousel',
-                pagination: false,
-                afterAction: function(){
-                    if ( this.itemsAmount > this.visibleItems.length ) {
-                        $(carouselNext).show();
-                        $(carouselPrev).show();
-
-                        $(carouselNext).removeClass('disabled');
-                        $(carouselPrev).removeClass('disabled');
-                        if ( this.currentItem == 0 ) {
-                            $(carouselPrev).addClass('disabled');
-                        }
-                        if ( this.currentItem == this.maximumItem ) {
-                            $(carouselNext).addClass('disabled');
-                        }
-
-                    } else {
-                        $(carouselNext).hide();
-                        $(carouselPrev).hide();
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1,
+                        margin: 5,
+                        nav: false,
+                        dots: true,
+                        stagePadding: 25,
+                        loop: true
+                    },
+                    768:{
+                        items: 3,
+                        margin: 10,
+                        nav: true,
+                        rewind:true
+                    },
+                    1170:{
+                        items: 4,
+                        margin: 10,
+                        nav: true,
+                        rewind:true
                     }
+
                 }
             });
 
-            // Custom Navigation Events
-            carouselNext.click(function(){
-                owl.trigger('owl.next');
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
             });
-
-            carouselPrev.click(function(){
-                owl.trigger('owl.prev');
-            })
-
         }
     });
     /* /Carousel Owl Slider */
