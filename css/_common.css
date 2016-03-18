@@ -1799,6 +1799,21 @@ a.fancybox-thumb:hover .img-container:before {
     bottom: 0;
     margin: auto;
 }
+
+.blur{
+    -webkit-filter: url(#blur);
+    filter: url(#blur);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    -webkit-transition: 1s -webkit-filter linear;
+    transition: 1s filter linear;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
 /*---------/OTHER STYLES------------*/
 
 

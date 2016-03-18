@@ -350,6 +350,13 @@ $(function () {
                         PLAY_START: 'Просмотр слайдшоу',
                         PLAY_STOP: 'Поставить показ слайдов на паузу'
                     }
+                },
+                // размытие
+                beforeLoad: function() {
+                    $('html').find("body >:not([id^='fancybox-'])").addClass('blur');
+                },
+                beforeClose: function() {
+                    $('html').find("body >:not([id^='fancybox-'])").removeClass('blur');
                 }
             });
 
