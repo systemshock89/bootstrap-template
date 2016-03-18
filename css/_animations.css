@@ -2,9 +2,10 @@
 
 .catalog-products.test .item1 .img-container{
     width: 240px;
-    height: 240px;
+    height: 240px!important;
     display: block;
     position: relative;
+    margin: 0 auto;
 }
 
 .catalog-products.test .item1 .img-container img{
