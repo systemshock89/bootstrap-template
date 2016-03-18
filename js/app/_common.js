@@ -18,7 +18,9 @@ $(function () {
     setTimeout(function() {
 
         $(".catalog-products .item .name").equalHeights();
+        $(".catalog-products .item .img-container").equalHeights();
         $(".catalog-gallery .item .name").equalHeights();
+        $(".catalog-gallery .item .img-container").equalHeights();
         $(".catalog-sections .item .name").equalHeights();
 
     }, 0);

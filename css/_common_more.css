@@ -534,28 +534,33 @@
 
 /*---------SOCIALS------------*/
 .socials {
-
+    display: inline-block;
+    padding: 10px;
+    background-color: #e7e7e7;
 }
 
 .socials .item {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    margin: 0 5px;
+    margin-right: 10px;
+    background: url('../img/socials-spritesheet.png') no-repeat;
 }
 
-.socials .item.v {
-    background: url('../img/v.png') center no-repeat;
+.socials .item.vk {
+    width: 14px;
+    height: 16px;
+    background-position: -28px 0;
 }
 
-.socials .item.f {
-    background: url('../img/f.png') center no-repeat;
+.socials .item.fb {
+    width: 10px;
+    height: 21px;
+    background-position: 0 0;
 }
 
-.socials .item.t {
-    background: url('../img/t.png') center no-repeat;
+.socials .item.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -10px 0;
 }
 
 /*---------/SOCIALS------------*/
