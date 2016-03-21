@@ -14,16 +14,6 @@ $(function () {
     /* /MINI КОРЗИНА */
 
 
-    // задаем одинаковую высоту для элементов
-    $(".catalog-products .item .name").matchHeight();
-    $(".catalog-products .item .img-container").matchHeight();
-    $(".catalog-gallery .item .name").matchHeight();
-    $(".catalog-gallery .item .img-container").matchHeight();
-    $(".catalog-sections .item .name").matchHeight();
-    $(".catalog-sections .item .img-container").matchHeight();
-    // /задаем одинаковую высоту для элементов
-
-
     /* Картинка для элемента по дефолту */
     $(".row .item").each(function () {
         var cur_img = $(this).find('img').attr('src');
@@ -33,6 +23,16 @@ $(function () {
     /* /Картинка для элемента по дефолту */
 
 
+    // задаем одинаковую высоту для элементов
+    $(".catalog-products .item .name").matchHeight();
+    $(".catalog-products .item .img-container").matchHeight();
+    $(".catalog-gallery .item .name").matchHeight();
+    $(".catalog-gallery .item .img-container").matchHeight();
+    $(".catalog-sections .item .name").matchHeight();
+    $(".catalog-sections .item .img-container").matchHeight();
+    // /задаем одинаковую высоту для элементов
+
+    
     /* Стартуем стандартную ajax обработку */
     $('form.standart_load,a.standart_load').standart_load();
     /* /Стартуем стандартную ajax обработку */
