@@ -15,16 +15,12 @@ $(function () {
 
 
     // задаем одинаковую высоту для элементов
-    setTimeout(function() {
-
-        $(".catalog-products .item .name").equalHeights();
-        $(".catalog-products .item .img-container").equalHeights();
-        $(".catalog-gallery .item .name").equalHeights();
-        $(".catalog-gallery .item .img-container").equalHeights();
-        $(".catalog-sections .item .name").equalHeights();
-        $(".catalog-sections .item .img-container").equalHeights();
-
-    }, 0);
+    $(".catalog-products .item .name").matchHeight();
+    $(".catalog-products .item .img-container").matchHeight();
+    $(".catalog-gallery .item .name").matchHeight();
+    $(".catalog-gallery .item .img-container").matchHeight();
+    $(".catalog-sections .item .name").matchHeight();
+    $(".catalog-sections .item .img-container").matchHeight();
     // /задаем одинаковую высоту для элементов
 
 
