@@ -170,12 +170,13 @@ $(function () {
         });
 
         sync2.owlCarousel({
-            items: 4,
-            itemsDesktop: [1199, 4],
-            itemsDesktopSmall: [979, 3],
-            itemsTablet: [768, 3],
-            itemsMobile: [479, 2],
+            items: 3,
+            itemsDesktop: [1200, 3],
+            itemsDesktopSmall: [992, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [480, 2],
             pagination: false,
+            navigation: true,
             responsiveRefreshRate: 100,
             afterInit: function (el) {
                 el.find(".owl-item").eq(0).addClass("synced");
@@ -206,15 +207,6 @@ $(function () {
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo", number);
         });
-
-        // Custom Navigation Events
-        carouselNext.click(function () {
-            sync2.trigger('owl.next');
-        });
-
-        carouselPrev.click(function () {
-            sync2.trigger('owl.prev');
-        })
 
     }
 
