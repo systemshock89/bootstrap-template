@@ -22,6 +22,7 @@ $(function () {
         $(".catalog-gallery .item .name").equalHeights();
         $(".catalog-gallery .item .img-container").equalHeights();
         $(".catalog-sections .item .name").equalHeights();
+        $(".catalog-sections .item .img-container").equalHeights();
 
     }, 0);
     // /задаем одинаковую высоту для элементов
