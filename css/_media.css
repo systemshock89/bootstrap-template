@@ -96,6 +96,11 @@
         right: 5px;
     }
 
+    .table{
+        overflow: auto;
+        display: block;
+    }
+
 }
 
 
