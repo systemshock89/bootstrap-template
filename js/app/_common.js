@@ -107,6 +107,7 @@ $(function () {
                     ""
                 ],
                 dots: false,
+                responsiveBaseElement: $('#overflow_div'),
                 responsive:{
                     0:{
                         items:1,
