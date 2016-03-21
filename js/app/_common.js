@@ -296,7 +296,7 @@ $(function () {
         }
     }(jQuery));
 
-    $('.content-wraper.content-center .content p img').each(function(){
+    $('.content-wraper .container p img').each(function(){
         if(
             //$(this).attr('style').indexOf('width:') != -1 &&
             $(this).attr('style').indexOf('max-width:') == -1 &&
