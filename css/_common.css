@@ -1069,10 +1069,12 @@ header .contacts {
 .item-form-element input {
     display: inline-block;
     vertical-align: middle;
+    width: 280px;
 }
 
 .item-form-element textarea {
     vertical-align: top;
+    width: 280px;
 }
 
 .item-form-element .title {
