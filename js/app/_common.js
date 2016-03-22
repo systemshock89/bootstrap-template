@@ -619,3 +619,27 @@ $(window).on('load', function () {
     $spinner.fadeOut();
     $preloader.delay(400).fadeOut('slow');
 });
+
+
+//Скрипт добавления ссылки на источник при копировании
+function addLink() {
+    //Get the selected text and append the extra info
+    var selection = window.getSelection(),
+        pagelink = '<br /><br /> Подробнее: ' + document.location.href,
+        copytext = selection + pagelink,
+        newdiv = document.createElement('div');
+
+    //hide the newly created container
+    newdiv.style.position = 'absolute';
+    newdiv.style.left = '-99999px';
+
+    //insert the container, fill it with the extended text, and define the new selection
+    document.body.appendChild(newdiv);
+    newdiv.innerHTML = copytext;
+    selection.selectAllChildren(newdiv);
+
+    window.setTimeout(function () {
+        document.body.removeChild(newdiv);
+    }, 100);
+}
+document.addEventListener('copy', addLink);
