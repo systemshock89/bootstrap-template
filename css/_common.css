@@ -719,7 +719,7 @@ header .contacts {
 }
 
 .catalog-gallery .item .img-container img{
-    max-height: 200px;
+    max-height: 262px;
     border: 10px solid #fff;
     box-shadow: 0 2px 10px 0 #b3b6ba;
     margin: 0 auto;
@@ -936,8 +936,8 @@ header .contacts {
 .carousel_slider .owl-carousel .item .img-container img{
     width: auto;
     margin: 0 auto;
-    max-width: 200px;
-    max-height: 109px;
+    max-width: 260px;
+    max-height: 260px;
 }
 
 /*owl-nav*/
@@ -1366,6 +1366,10 @@ form .status_message {
     display: inline-block;
     vertical-align: middle;
     padding-right: 15px;
+}
+
+.faq.nc-form .item-form-element.date{
+    display: none;
 }
 
 .faq.nc-form textarea {
