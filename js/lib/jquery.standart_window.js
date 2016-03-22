@@ -2,7 +2,7 @@
  * @author A1exandr Belikh
  * @email zimovchanin@gmail.com
  * @description Простое всплывающее окно
- * version: 0.0.3
+ * version: 1.0.0
  *
  * Создан 27.02.2014 Позволит создавать всплывающие окна для форм и т.п. ( 0JHQtdC70YvRhSDQkNC70LXQutGB0LDQvdC00YAg0KHQtdGA0LPQtdC10LLQuNGHIHppbW92Y2hhbmluQGdtYWlsLmNvbQ== )
  */
@@ -21,7 +21,7 @@ jQuery.fn.standart_window = function(options){
             $popupOverflower = $this.find('.window-popup-overflower');
 
         if( options.show ){
-            $this.addClass('show');
+            $this.show().addClass('show');
         } else {
             $this.removeClass('show');
         }
@@ -34,16 +34,13 @@ jQuery.fn.standart_window = function(options){
 
         /* Сначала фиксируем блок вверх */
         $this.css( { position:"fixed" , left:0 , top:0 } );
-        //$body.css( { "margin-top":0 } );
 
         // добавляем размытие
         $this.siblings(":not(script)").addClass('blur');
 
         /* Скрытие */
         $close.click(function(){
-            $this.removeClass('show');
-
-            $this.siblings(":not(script)").removeClass('blur');  // убираем размытие
+            closePopup($close);
         });
 
         /* Скрытие при клике на темную область*/
@@ -54,7 +51,7 @@ jQuery.fn.standart_window = function(options){
         /* Центрируем и позиционируем абсолютно */
         var resize_body = function(){
             var offset = $this.offset();
-            var AnimateWindow = setInterval(function(){
+            //var AnimateWindow = setInterval(function(){
 
                 var top_value = parseInt((jQuery(window).height()-$body.height())/2),
                     now_top = parseInt($this.css('top'));
@@ -66,14 +63,26 @@ jQuery.fn.standart_window = function(options){
                         offset = $this.offset();
                         $this.css( { position:"absolute" , left:offset.left , top:offset.top } );
                     }
-                    clearInterval(AnimateWindow);
+                    //clearInterval(AnimateWindow);
                 } else {
-                    $this.css({'top': (now_top + 8) + "px"});
+                    $this.css({'top': (now_top + top_value) + "px"});
                 }
-            },8);
+            //},8);
 
         };
         resize_body();
     });
 };
+
+function  closePopup($this){
+
+    $this.closest('.window').removeClass('show');
+
+    setTimeout(function() {
+        $this.closest('.window').hide();
+    }, 200);
+
+    $("*").removeClass('blur');  // убираем размытие
+
+}
 /* d5b8675f7f6f9cfa7c296c91eb970dd2 */

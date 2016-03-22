@@ -815,7 +815,7 @@ header .contacts {
 }
 
 .synced_slider1 .owl-carousel .item .img-container img {
-
+    margin: 0 auto;
 }
 
 .synced_slider2 {
@@ -836,7 +836,7 @@ header .contacts {
 }
 
 .synced_slider2 .owl-carousel .item .img-container img {
-
+    margin: 0 auto;
 }
 
 .synced_slider2 .owl-carousel .item:hover {
@@ -1186,31 +1186,21 @@ form .status_message {
 
 /*форма заказа товара*/
 .form-zakaz-item {
-    width: 220px;
     text-align: center;
     display: inline-block;
 }
 
 .form-zakaz-item .img-container {
-    position: relative;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    display: inline-block;
 }
 
 .form-zakaz-item .img-container img {
     max-width: 150px;
     max-height: 150px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
 }
 
-.form-zakaz-item .title {
-    width: 220px;
+.form-zakaz-item .title-tovar {
+    margin-top: 10px;
 }
 /*---------/FORM------------*/
 
@@ -1221,7 +1211,7 @@ form .status_message {
     left: 0;
     top: 0;
     width: 100%;
-    display: none;
+    /*display: none;*/
     text-align: center;
     vertical-align: middle;
     z-index: 98;
@@ -1246,6 +1236,20 @@ form .status_message {
     border-radius: 9px;
     padding: 20px 30px;
     box-shadow: 0 0 15px rgba(23, 23, 24, .75);
+
+    opacity: 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+    -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+    transform: translateY(-20px) perspective(600px) rotateX(10deg);
+}
+
+.window.show .window_body{
+    opacity: 1;
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+    -ms-transform: translateY(0) perspective(600px) rotateX(0);
+    transform: translateY(0) perspective(600px) rotateX(0);
 }
 
 .window .window_body .content {
@@ -1293,7 +1297,7 @@ form .status_message {
 }
 
 .window.show {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .window form textarea {
@@ -1302,13 +1306,17 @@ form .status_message {
 
 .window .button.close-btn {
     display: block;
-    width: 80px;
+    width: 180px;
     margin: 15px auto 0 auto;
     text-transform: uppercase;
 }
 
 .window .form-input-warning {
     margin-bottom: 15px;
+}
+
+.window .button{
+    min-width: 180px;
 }
 /*---------/ВСПЛЫВАЮЩЕЕ ОКНО------------*/
 
