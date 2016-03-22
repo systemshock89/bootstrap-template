@@ -186,13 +186,12 @@ header .container {
 }
 
 header .logo {
-    float: left;
+
 }
 
 header .contacts {
-    float: right;
-}
 
+}
 /*---------/HEADER------------*/
 
 
@@ -632,6 +631,10 @@ header .contacts {
 
 .news.widget .item .text{
     margin-bottom: 10px;
+}
+
+.news.widget > .button{
+    width: 100%;
 }
 /*---------/NEWS------------*/
 
@@ -1885,9 +1888,7 @@ a.fancybox-thumb:hover .img-container:before {
 /*--------- CART-STYLE ------------*/
 /* ---- верхняя миникорзина ---- */
 .header-mini-cart {
-    position: absolute;
-    right: 309px;
-    top: 35px;
+
 }
 
 .header-mini-cart .mini-cart-content {

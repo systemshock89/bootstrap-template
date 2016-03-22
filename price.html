@@ -34,13 +34,26 @@
     <!--header-->
     <header>
         <div class="container">
-            <a href="/" title="На Главную"><img class="logo" src="/img/logo.png" alt=""/></a>
+            <div class="row">
 
-            <div class="contacts">
-                Телефон:<br>
-                <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
-                E-mail:<br>
-                <a href="mailto:info@cms-nc.ru" title="Написать письмо">info@cms-nc.ru</a>
+                <div class="col-sm-4">
+                    <a href="/" title="На Главную"><img class="logo" src="/img/logo.png" alt=""/></a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a class="button" href="#">Отправить заявку</a>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="contacts">
+                        Телефон:<br>
+                        <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
+                        <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
+                        E-mail:  <a href="mailto:info@cms-nc.ru" title="Написать письмо">info@cms-nc.ru</a><br>
+                        Адрес: <?=$current_catalogue['adress']?>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
