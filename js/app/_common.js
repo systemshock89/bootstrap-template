@@ -24,12 +24,12 @@ $(function () {
 
 
     // задаем одинаковую высоту для элементов
-    $(".catalog-products .item .name").matchHeight();
     $(".catalog-products .item .img-container").matchHeight();
-    $(".catalog-gallery .item .name").matchHeight();
+    $(".catalog-products .item .name").matchHeight();
     $(".catalog-gallery .item .img-container").matchHeight();
-    $(".catalog-sections .item .name").matchHeight();
+    $(".catalog-gallery .item .name").matchHeight();
     $(".catalog-sections .item .img-container").matchHeight();
+    $(".catalog-sections .item .name").matchHeight();
     // /задаем одинаковую высоту для элементов
 
     
