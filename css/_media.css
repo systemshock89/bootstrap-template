@@ -101,6 +101,12 @@
         display: block;
     }
 
+    .news.one .item .img-container{
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
 }
 
 

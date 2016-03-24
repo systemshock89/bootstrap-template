@@ -591,7 +591,9 @@ header .contacts {
 }
 
 .news.one .item .img-container{
-
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 220px;
 }
 
 /*widget*/
