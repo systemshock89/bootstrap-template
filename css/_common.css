@@ -938,7 +938,6 @@ header .contacts {
 .carousel_slider .owl-carousel .item .img-container img{
     width: auto;
     margin: 0 auto;
-    max-width: 260px;
     max-height: 260px;
 }
 

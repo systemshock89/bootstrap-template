@@ -162,9 +162,9 @@ $(function () {
             pagination: false,
             afterAction: syncPosition,
             responsiveRefreshRate: 200,
+            responsiveBaseWidth : $('#overflow_div'),
             touchDrag: false,
             mouseDrag: false
-
         });
 
         sync2.owlCarousel({
@@ -176,6 +176,7 @@ $(function () {
             pagination: false,
             navigation: true,
             responsiveRefreshRate: 100,
+            responsiveBaseWidth : $('#overflow_div'),
             afterInit: function (el) {
                 el.find(".owl-item").eq(0).addClass("synced");
             },
