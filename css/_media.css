@@ -96,9 +96,12 @@
         right: 5px;
     }
 
-    .table{
-        overflow: auto;
-        display: block;
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 
     .news.one .item .img-container{
