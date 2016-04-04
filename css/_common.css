@@ -557,6 +557,7 @@ header .contacts {
 }
 
 .news.list .item .date{
+    display: block;
     color: #959595;
     font-size: 12px;
 }
@@ -586,6 +587,7 @@ header .contacts {
 }
 
 .news.one .item .date{
+    display: block;
     color: #959595;
     font-size: 12px;
 }
@@ -612,6 +614,7 @@ header .contacts {
 }
 
 .news.widget .item .date{
+    display: block;
     color: #959595;
     font-size: 12px;
 }
