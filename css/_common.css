@@ -1,9 +1,12 @@
-/* version: 1.0.0 */
+/* version: 1.0.1 */
 
-/*---------STANDART STYLES------------*/
+/*---------STANDARD STYLES------------*/
 html {
     position: relative;
     min-height: 100%;
+}
+
+body{
     font-family: 'Roboto', serif;
     font-size: 14px;
     color: #333;
@@ -171,7 +174,7 @@ h4, .h4 {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #999;
 }
-/*---------/STANDART STYLES------------*/
+/*---------/STANDARD STYLES------------*/
 
 
 /*---------HEADER------------*/
@@ -1253,9 +1256,9 @@ form .status_message {
 
 .window.show .window_body{
     opacity: 1;
-    -webkit-transform: translateY(0) perspective(600px) rotateX(0);
-    -ms-transform: translateY(0) perspective(600px) rotateX(0);
-    transform: translateY(0) perspective(600px) rotateX(0);
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0deg);
+    -ms-transform: translateY(0) perspective(600px) rotateX(0deg);
+    transform: translateY(0) perspective(600px) rotateX(0deg);
 }
 
 .window .window_body .content {
