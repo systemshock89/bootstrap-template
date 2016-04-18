@@ -368,7 +368,7 @@ function customInputFile(obj) {
  */
 function setInputFileName(obj) {
     if (obj.val() !== '') {
-        obj.parent().find('.file-name').html('<img class="clear-input-file" src="img/close.png" onclick="clearInputFile($(this))" alt=""/>')
+        obj.parent().find('.file-name').html('<img class="clear-input-file" src="img/temp/close.png" onclick="clearInputFile($(this))" alt=""/>')
             .css('display', 'inline-block')
             .append(obj.val().replace(/.*[\\\/](.*)/, "$1"))
             .parent().parent().find('.validation-informer').hide();
