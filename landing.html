@@ -1,0 +1,235 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts Loader from fonts.css (HTML5 LocalStorage) -->
+    <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/css/_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="/css/owl.transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/slicknav.min.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/css/_common.css?ver=1.0.0">
+    <link rel="stylesheet" href="/css/_media.css?ver=1.0.0">
+
+    <link rel="stylesheet" href="/css/_landing.css?ver=1.0.0">
+    <link rel="stylesheet" href="/css/_landing_media.css?ver=1.0.0">
+</head>
+
+<body>
+
+<div id="overflow_div">
+
+    <!--header-->
+    <header>
+        <div class="header-block">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <a href="/" title="На Главную"><img class="logo" src="/img/logo.png" alt=""/></a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a class="button" href="#">Отправить заявку</a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="contacts">
+                            Телефон:<br>
+                            <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
+                            <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
+                            E-mail:  <a href="mailto:info@cms-nc.ru" title="Написать письмо">info@cms-nc.ru</a><br>
+                            Адрес: Третья улица Строителей, д.25, кв.15
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--menu-top-->
+        <div class="menu-top-container">
+            <div class="container">
+                <nav class="menu-top">
+                    <ul>
+                        <li><a href="#landing-block1">Block 1</a></li><!--
+                    --><li><a href="#landing-block2">Block 2</a>
+                        <!--<ul>-->
+                            <!--<li><a href="#">Подраздел 1</a></li>-->
+                            <!--<li><a href="#">Подраздел 2</a></li>-->
+                            <!--<li><a href="#">Подраздел 3</a></li>-->
+                        <!--</ul>-->
+                    </li><!--
+                    --><li><a href="#landing-block3">Block 3</a>
+                        <ul>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Вопрос-Ответ</a></li>
+                        </ul>
+                    </li><!--
+                    --><li><a href="#">Прайс</a></li><!--
+                    --><li class="helper"></li><!-- доп элемент для выравнивания по ширине -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--slider-->
+    <div class="index_slider">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="img-container">
+                        <img src="/img/temp/slide1.jpg" class="img-responsive" alt=""/>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="/img//temp/slide2.jpg" class="img-responsive" alt=""/>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="/img/temp/slide3.jpg" class="img-responsive" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="content-wraper">
+
+
+        <section class="landing-block" id="landing-block1">
+            <div class="container">
+
+                <div class="h1">Block 1</div>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam architecto consequuntur debitis delectus dolor dolores, enim error eveniet fuga inventore minima molestias natus necessitatibus nostrum qui quibusdam rerum sunt tempore ut veniam vitae voluptatum! Aliquam aliquid consequuntur, deserunt earum esse impedit maxime minima natus neque nisi perferendis, porro praesentium quasi quia recusandae reprehenderit sequi ut. Alias, aspernatur at ex fuga incidunt ipsa necessitatibus vel? A error et eveniet ipsa odio qui repudiandae sapiente totam vero voluptatem. Ad amet consequuntur delectus eaque et fugiat, illo inventore ipsum nam perspiciatis repellendus sequi velit, veniam veritatis voluptatem? Accusantium assumenda, blanditiis cumque cupiditate, debitis dignissimos ducimus ea explicabo ipsa, ipsum iste iure iusto laudantium magnam maiores minima molestiae nihil nostrum obcaecati odit pariatur praesentium quasi quibusdam quisquam reiciendis repellendus similique sit suscipit ullam ut velit voluptas voluptatem voluptatibus! Animi autem, consequatur consequuntur deleniti dolor dolorum ipsam iure, laborum magnam necessitatibus nihil nostrum optio provident quam quidem voluptates voluptatibus. A aperiam aspernatur commodi consectetur cum cupiditate distinctio dolor dolore ea et, ex exercitationem facere illo, impedit iure iusto maxime necessitatibus nihil odit officia omnis perspiciatis quae quam quas quo recusandae, repudiandae similique sint tenetur veniam! Alias asperiores atque beatae blanditiis deserunt dolores error libero nihil quibusdam recusandae? A accusantium ad consequatur culpa cupiditate distinctio, dolor esse facilis fuga iure iusto laborum molestiae nemo nisi numquam, pariatur quia quod quos similique, soluta tempore totam voluptatum! Aliquam autem blanditiis dicta dolor, dolore, dolorem ea eveniet excepturi facilis hic ipsa iusto libero maiores minus neque nihil omnis qui quod ratione repellat reprehenderit similique sint sit sunt suscipit tempora tenetur ullam ut veniam veritatis vitae voluptas voluptatibus voluptatum. Assumenda et quam veniam. Ab aliquid assumenda atque commodi deleniti distinctio dolorem doloremque dolores doloribus ducimus eius eligendi esse, inventore iusto molestiae natus neque nihil nobis nostrum, officia perspiciatis qui repellendus saepe, similique sint unde vel voluptatum! Architecto cupiditate dolorum ea eaque esse, et fuga illo impedit iure, magni neque nostrum nulla officiis possimus quas quisquam ratione ullam velit voluptatem voluptates! Amet animi assumenda, at cum cupiditate debitis deleniti dolorem doloremque doloribus ducimus eligendi hic illo ipsum laboriosam quam quas quasi quod repudiandae sunt tempore unde vero voluptas. Autem cum deserunt est harum laborum officiis quae reiciendis soluta tenetur! A adipisci aliquam architecto at consectetur consequuntur cumque delectus deleniti dignissimos dolore dolores dolorum eius fugiat laudantium minus molestiae odit porro quam quasi, rerum saepe sunt temporibus tenetur ullam voluptas voluptate voluptatem. Amet, aperiam, aspernatur at est et fuga laboriosam nihil nisi nobis nulla quasi quis quo repellendus tenetur vero! Aliquid asperiores aut consequatur distinctio earum est eum ex exercitationem facilis hic in ipsam iure magni maxime minima molestiae molestias nesciunt nihil nobis numquam obcaecati odit perspiciatis praesentium quas quasi quibusdam quis recusandae repellendus, repudiandae saepe sed unde veniam vero! A accusamus accusantium adipisci aliquam aperiam atque aut consectetur cumque debitis dignissimos dolore dolorem enim illo illum in ipsa ipsum iusto maxime natus nostrum officiis quas quasi qui quia, quidem quo repudiandae saepe sunt tempora temporibus tenetur, ut vel veniam vero vitae voluptatem voluptatum! Accusamus architecto assumenda aut, consectetur deserunt dolorem, ducimus exercitationem impedit ipsa laborum maxime nesciunt numquam optio quo ratione repellendus, temporibus unde. Architecto, incidunt iste magni nostrum quo vero. Ab aliquam asperiores at autem consectetur, consequatur dignissimos dolor doloribus error esse est excepturi, facere facilis fugiat laborum maxime modi nesciunt nobis obcaecati odit officiis, praesentium quaerat qui quidem quos repellat reprehenderit sed soluta sunt vel velit veritatis vitae voluptates! Aspernatur doloremque doloribus facilis optio reiciendis rem saepe velit? Distinctio doloribus eaque expedita impedit nemo omnis recusandae. Blanditiis consectetur cumque deleniti, distinctio dolore esse et exercitationem facilis hic libero modi necessitatibus nisi odio officia officiis perferendis quae qui quo rerum, sed tempora vel vitae voluptatibus. Adipisci blanditiis consequatur dolor eaque enim nulla perferendis placeat quo sequi tempore? At autem deserunt doloribus facilis ipsam, molestiae molestias natus nihil nisi odit quod quos, rem saepe voluptate voluptatum. Aut deleniti dignissimos doloribus eligendi ipsa labore quibusdam sed voluptatem. Adipisci aspernatur culpa dolorum eos, natus officiis optio possimus reprehenderit sequi? Corporis ducimus enim esse illo repellendus repudiandae totam! Adipisci atque autem dignissimos eaque ex iure iusto laborum laudantium libero mollitia non omnis rem sequi, veritatis vitae! Aut dolor dolores mollitia voluptatum. Asperiores at delectus deserunt dicta doloremque ducimus fuga illo incidunt, nemo nesciunt, quidem repellat tenetur veritatis, vitae voluptates? Aperiam asperiores at commodi corporis cum doloribus eius error exercitationem itaque, laudantium libero magni, obcaecati optio pariatur praesentium repellat sed sequi sint sit tempore ut vitae voluptatum. Ab alias exercitationem in nulla porro quibusdam saepe veniam veritatis. Asperiores corporis cumque deleniti doloremque ex facere hic iste quia, ut veniam. Dolorem dolorum et nemo neque pariatur possimus quas, rerum tenetur ullam unde. Adipisci aperiam consequuntur cupiditate doloribus facilis fugit, harum hic illo ipsum laborum nam nobis nulla omnis pariatur provident quaerat quasi ullam velit voluptatem.
+
+            </div>
+        </section>
+
+        <section class="landing-block" id="landing-block2">
+            <div class="container">
+
+                <div class="h1">Block 2</div>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dicta magnam non rem tempore ullam velit vero voluptate. Aliquid blanditiis exercitationem impedit quasi quisquam, rerum tempore! Animi autem cum eius fuga hic illum in ipsum iste iusto, nesciunt quaerat quas qui, quos reprehenderit rerum, similique soluta. Accusantium amet assumenda aut corporis cupiditate dolorem doloribus earum, et ex facilis hic incidunt ipsum molestiae nam non optio, possimus praesentium reiciendis repellat repellendus repudiandae saepe sint soluta tenetur voluptas! Accusantium alias aliquid beatae cupiditate distinctio dolorem doloremque enim error expedita explicabo, fugit illo illum inventore iste magnam minima minus molestias mollitia nesciunt numquam quas quasi quisquam reiciendis sapiente sed similique sunt ullam vel vero vitae. Amet consequatur deserunt dolor earum est, facere facilis ipsam ipsum non numquam odio optio possimus provident quam recusandae reiciendis, reprehenderit suscipit voluptates! Assumenda autem blanditiis doloremque, doloribus facilis fuga ipsa ipsam natus nihil omnis, reiciendis rerum, sed soluta. A aliquam asperiores at consequuntur, corporis culpa cum cupiditate deleniti distinctio dolor doloremque, doloribus ea eius eum eveniet id in laboriosam laudantium libero magnam minima minus molestias optio quibusdam ratione repellendus repudiandae sequi soluta sunt suscipit, totam vitae voluptas voluptates. Aut distinctio doloremque ducimus eius error esse incidunt maxime, possimus quod sed sit tempore totam vitae! Aspernatur atque corporis cum, cumque enim, eos excepturi fugit necessitatibus nesciunt non nostrum nulla numquam odio placeat quam quas, quasi quidem quo reiciendis repellat repellendus totam vero voluptatibus. Ea, inventore laborum nostrum omnis pariatur quia sapiente soluta vel? Maiores, officia sequi! Aut eveniet facere ipsum laborum modi pariatur perferendis repellendus tempore tenetur veritatis? Culpa cupiditate doloribus, laboriosam necessitatibus placeat praesentium voluptate! Accusamus, accusantium adipisci aliquid aspernatur autem beatae blanditiis cum dignissimos dolor dolore dolorum ea eaque eveniet ex facilis harum hic illum ipsum laborum minima mollitia nam necessitatibus neque odit officia pariatur quae quisquam ratione rerum saepe sed sequi similique tempora tenetur vel veritatis voluptates. Delectus deserunt earum est, explicabo maiores porro. Assumenda aut beatae cum ea excepturi id impedit libero magnam magni minus molestiae nisi nostrum numquam quaerat quas quibusdam ratione rem, reprehenderit sunt suscipit ullam voluptatem voluptatum! Accusantium adipisci asperiores aut beatae consequatur consequuntur debitis delectus deserunt distinctio dolorem doloribus earum eligendi esse eum eveniet ex exercitationem explicabo facilis harum illo iusto laborum, magnam nam natus nobis non omnis optio perferendis praesentium quae qui ratione rem repellendus reprehenderit sed sint voluptates! Earum impedit labore pariatur quaerat quia. At blanditiis commodi consequatur dicta distinctio dolor dolorem dolores expedita facere ipsam ipsum laborum libero neque, optio perferendis porro quas quasi, qui quisquam rerum saepe sapiente similique sit unde vero voluptas voluptatibus voluptatum. Ad alias architecto assumenda blanditiis cum doloribus ea eius est fuga iure maiores, minima nam nostrum nulla numquam placeat quos ratione recusandae sunt, tempore vero, vitae voluptas. A aliquid amet aut commodi cumque distinctio error ex exercitationem illo in ipsa iusto, laudantium libero minus molestias nesciunt praesentium quam quia quidem recusandae reprehenderit sequi tempore temporibus vitae voluptatum! Ab atque dolore error excepturi, perspiciatis veniam. A accusantium aperiam debitis expedita explicabo ipsa omnis recusandae veritatis? Aliquam architecto odit quod reprehenderit vel. Animi architecto at corporis cupiditate debitis dolor doloremque labore laborum magni mollitia, natus nobis non odit omnis optio pariatur perspiciatis placeat quibusdam soluta tempore ullam, veritatis voluptate! Commodi deserunt magnam nesciunt quasi sint. Aliquid animi consequatur ducimus enim expedita neque rerum soluta vel voluptate, voluptatem! Ducimus facilis iste odio voluptatem! A adipisci amet architecto commodi culpa cum cumque, distinctio doloribus, harum hic magni mollitia nesciunt nostrum numquam odit optio pariatur perferendis placeat provident quasi quia ratione recusandae repellendus rerum suscipit tempora ullam. Ab accusantium autem consequatur culpa deserunt doloremque ea eveniet expedita in minima mollitia nihil non numquam omnis praesentium, rerum saepe sed ullam voluptas voluptatibus. At doloremque est harum maiores, officia quae quam quidem quod voluptates! Ad aliquam, aspernatur blanditiis dolorum expedita laborum minima nostrum obcaecati perferendis perspiciatis quasi qui quibusdam quisquam, reiciendis rerum unde velit? Aperiam at beatae corporis cum eius et hic in laboriosam laborum natus nemo nihil optio porro quisquam rem repellat repellendus, saepe similique, voluptatem voluptates. Accusantium aliquid, architecto atque aut autem blanditiis consequuntur cumque dolore dolorem dolorum ducimus ea eveniet expedita facilis fuga in incidunt inventore ipsum itaque iure magnam magni molestiae nam nobis obcaecati, officiis omnis porro praesentium provident quam qui ratione repellendus tempora temporibus unde vel veniam. Consequuntur dolorem eligendi esse fuga ipsam ratione, tenetur! Alias assumenda delectus, magnam minus obcaecati optio! Ab autem commodi, corporis dignissimos dolores doloribus eligendi esse eveniet facilis impedit nisi numquam qui quidem sunt veniam. Amet debitis distinctio dolor dolores est, explicabo impedit itaque laudantium libero maiores pariatur porro possimus qui quis, quod repellendus temporibus tenetur vitae voluptates voluptatibus. Aliquid corporis doloremque in magni minus nemo, saepe tenetur velit! Accusantium architecto aspernatur at blanditiis consequatur cumque eaque error excepturi expedita facere hic impedit iste, minima molestiae mollitia, nemo nobis non perspiciatis placeat quam quo ratione rerum sapiente sit soluta temporibus ullam ut veritatis voluptates, voluptatum? Amet, architecto assumenda, aut, consequuntur eaque harum iusto minima nemo nesciunt nobis possimus quibusdam recusandae sequi suscipit vitae. Illum, sint, totam. Aliquam deserunt ducimus perferendis provident quae rerum! Alias aliquam aliquid aperiam, consequatur consequuntur corporis cum cupiditate dolor, doloremque dolores error esse ex facere id ipsa ipsum nemo nostrum odio officiis pariatur provident quasi quidem, reiciendis sequi sint sit tempora tempore ullam vitae voluptatem. Ab accusamus alias aliquid asperiores assumenda atque consequatur debitis esse hic laboriosam molestiae nemo, nihil nulla perspiciatis quam quibusdam quod sapiente tenetur totam ut vel veritatis voluptates, voluptatibus. Aliquam asperiores cum cumque delectus dicta facere harum, laboriosam maiores minima nam nisi quasi quibusdam ratione similique veritatis? Adipisci commodi, consequatur distinctio dolor est excepturi facere ipsam ipsum, itaque mollitia, necessitatibus non perferendis ratione rem sit ullam voluptas! Aliquam aliquid consectetur, cum debitis dicta dolorum ducimus eius error exercitationem illo labore maxime natus nobis odio odit omnis perferendis porro possimus quaerat quam quia quos rem repellendus saepe sequi sit velit. Aliquid aspernatur atque, consequatur consequuntur culpa delectus ducimus eaque eveniet in ipsa maxime perspiciatis possimus quisquam quod ratione repellendus suscipit tempora veniam.
+
+            </div>
+        </section>
+
+        <section class="landing-block" id="landing-block3">
+            <div class="container">
+
+                <div class="h1">Block 3</div>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam at delectus deserunt distinctio harum ipsa ipsum itaque labore modi mollitia, porro quia rerum temporibus ullam unde voluptas voluptates. A adipisci aliquid asperiores, corporis delectus doloribus ea eligendi est fugit in ipsam molestias nostrum nulla officiis quae quasi quo quod repellat saepe suscipit tempora veniam voluptatem! Cumque dolores error numquam quia rem! Alias asperiores at atque aut, autem commodi consectetur corporis dolor doloremque ea expedita explicabo facilis fuga fugit impedit inventore iste labore laborum libero magni molestiae natus nihil, odit pariatur quaerat quasi quia quod rem saepe soluta tenetur ullam ut vel? Alias aliquam commodi excepturi fuga neque nostrum soluta temporibus. Ad adipisci blanditiis consequatur delectus distinctio dolor doloremque dolores ducimus eaque, eligendi error est et explicabo fugit harum illo incidunt ipsum iusto libero minus nemo neque non officia omnis placeat praesentium quas quasi quia recusandae rem sed similique sint sit temporibus tenetur ullam voluptates. Alias aliquid blanditiis deleniti facere fugiat iste perspiciatis voluptate? Accusantium, animi esse est fuga iusto, laudantium nam nostrum nulla odit officiis quasi sint. Corporis eius esse illo impedit inventore ipsum, numquam quia quibusdam! Accusantium asperiores corporis fugit hic minus necessitatibus pariatur voluptatem? A aspernatur, assumenda autem corporis culpa, cum deleniti earum esse et excepturi facilis fugit id illo maiores porro quaerat similique vel, voluptates! Adipisci animi aspernatur assumenda, cupiditate delectus dolor doloribus eaque in laudantium libero magni maiores molestias nisi nobis nostrum odit omnis pariatur quam qui quibusdam reiciendis soluta unde vitae voluptas voluptatem. A dignissimos dolorum eos esse eum ex, fugit modi officia pariatur perspiciatis quasi, repudiandae similique, soluta temporibus unde veritatis voluptates! Ad adipisci dignissimos doloribus dolorum ipsam iste iure laboriosam laborum necessitatibus nemo officiis pariatur perspiciatis, provident quam qui quos voluptas. Ab alias aliquid asperiores autem, blanditiis culpa deleniti doloremque fugiat incidunt ipsa libero mollitia necessitatibus nisi quas ratione reprehenderit sint sit ut voluptate voluptates! Ad adipisci aliquid amet consequuntur corporis, deserunt dignissimos dolorum et exercitationem explicabo ipsam ipsum iste laborum libero maxime minus nam natus nemo nobis placeat provident quae quas quibusdam quidem ratione sapiente sed suscipit temporibus totam ullam veniam voluptate voluptatem, voluptatibus. Consequuntur dolorem exercitationem facilis fugit hic incidunt ipsa ipsam laborum laudantium, modi mollitia necessitatibus placeat recusandae reiciendis rerum similique sint unde veritatis. Ab aspernatur, delectus doloribus impedit inventore maxime minus modi nesciunt odit officiis qui quo repudiandae ullam vel voluptate! Accusantium atque delectus dicta esse eveniet minima minus modi molestiae, nemo odio optio provident recusandae suscipit tempora tenetur! Atque esse facilis non quae quam, unde. Autem et, necessitatibus nostrum quaerat quasi quisquam sapiente? Asperiores at commodi cupiditate debitis delectus deleniti dignissimos dolorem doloribus, enim et explicabo facilis fuga ipsam laboriosam perferendis placeat quae quaerat quod ratione, reiciendis, sint sit unde velit! Adipisci libero non suscipit. A ab aliquid animi atque blanditiis consectetur cum est fuga, hic laboriosam laudantium libero magni maiores quidem ratione tempore tenetur totam? Amet aperiam aut blanditiis commodi cumque deleniti doloribus earum enim hic in ipsum magni, maiores mollitia non perferendis quidem recusandae repellendus sint sit suscipit? Ab aperiam asperiores beatae deleniti doloremque, dolores ea eligendi est laudantium molestias nemo obcaecati pariatur perferendis repudiandae rerum sed voluptates? Laboriosam, possimus, quis. Accusamus, accusantium, alias aliquam at autem ducimus eaque eius eligendi explicabo facere impedit inventore laboriosam modi nihil odio optio perferendis placeat praesentium quas quia quibusdam quos repellendus reprehenderit sapiente sequi similique soluta tempore totam veritatis vero. Aliquam aperiam asperiores autem blanditiis cumque dicta earum eos et exercitationem expedita incidunt iusto laborum laudantium magni maxime, minus molestiae nihil nostrum possimus quaerat quam reiciendis reprehenderit! Assumenda delectus dolorem dolorum ea, eius eos facere ipsam nemo provident quo repellat sapiente similique sint tempora totam. Molestias nemo quidem quod voluptates. Accusantium adipisci ducimus expedita iste libero mollitia praesentium quibusdam quisquam sapiente tenetur. Ad aliquid blanditiis deserunt dignissimos distinctio, doloremque esse eveniet ipsam labore maiores nam necessitatibus neque nihil perspiciatis porro quaerat quam quasi, quisquam rerum sapiente, sit voluptas voluptatibus. Deserunt molestias quidem similique sunt, unde vel. Animi asperiores consectetur dolore illum necessitatibus tenetur vel. Aliquam deserunt ducimus earum eius error exercitationem fugit, incidunt, ipsa laudantium, modi obcaecati perferendis perspiciatis quas quisquam repudiandae totam ullam ut! Dolor dolores eos ex illo quos sint tempora, voluptate. Adipisci aperiam debitis dolores ea, earum, id laboriosam libero nemo perferendis quam qui quis quo rem repellendus temporibus voluptates voluptatum! Adipisci cumque doloremque, ducimus in magnam natus, perspiciatis, porro quas qui quo ratione saepe sint tempore unde voluptas! Aliquid aperiam atque, consectetur culpa dignissimos ex expedita in molestias officia perferendis qui quod sint sunt tempore unde ut voluptates. Labore nisi odio sit. Assumenda fuga illo labore sapiente veritatis, vitae. Adipisci aspernatur fuga in ipsa molestiae numquam odio. Alias aliquid amet aspernatur aut commodi dicta enim harum id incidunt inventore laboriosam, maiores molestias nihil nobis nulla odio pariatur quis quisquam quos reprehenderit sequi sit sunt tempore temporibus ut veniam veritatis vero. Aliquam deleniti dolor fugit perferendis quas sapiente, sunt voluptatem? At, autem delectus ea error exercitationem laborum magni quo repellendus vitae voluptates. Alias at consectetur corporis deleniti maxime mollitia quasi. A, amet, delectus. Aliquam corporis, debitis delectus deleniti deserunt dignissimos eius explicabo harum hic illum, ipsam molestiae molestias mollitia qui quibusdam quo ratione reiciendis sapiente suscipit veritatis. Ad beatae, ea ex ipsam molestias quia unde. Aliquam dolor hic iure, nam quam sunt vitae. Ad adipisci aliquam beatae debitis dignissimos dolore ea enim harum in inventore ipsam laboriosam nemo neque nihil nobis provident quia repellat rerum, sequi, similique sit soluta temporibus, ullam voluptate voluptatem voluptates voluptatibus. Ad eos est fuga magni optio rerum veniam. Cum dolore ea harum hic in, itaque libero perferendis quasi ratione repellat suscipit voluptate voluptates. Aliquam animi aspernatur aut, consectetur consequatur corporis deserunt dignissimos dolore dolores ducimus enim excepturi fugit id illo in laboriosam libero magnam nam natus nesciunt nihil non nostrum odit optio perferendis praesentium quae qui quidem rem repellat, reprehenderit sed sequi sunt ullam vel velit, vero? Atque beatae commodi cupiditate dicta earum est excepturi, expedita, maxime officiis praesentium quibusdam quos veritatis. Aperiam deleniti dolor enim, harum in ipsum labore nihil non pariatur quod rem sint soluta vero voluptas voluptatem? Accusamus accusantium aliquid dolore dolorem, doloribus eius eos est eum fugiat harum impedit ipsam iste maiores minus modi nisi non odio officia officiis placeat possimus quasi qui quisquam reiciendis rem repellendus sapiente sed tempora ullam vitae? Alias atque, beatae consequuntur cupiditate deleniti deserunt dicta distinctio dolore ducimus eius esse fugit hic labore laboriosam molestias necessitatibus nemo neque officia quaerat qui rem sapiente soluta tempore! Aliquid assumenda aut consequuntur debitis distinctio dolore, dolorem doloribus ea excepturi explicabo, illum incidunt iste itaque iure minus mollitia nam necessitatibus nemo nesciunt officia perferendis quisquam reiciendis rerum saepe sunt veniam vero voluptatum! Accusamus commodi cumque eligendi expedita illum, inventore iusto labore, maiores minima pariatur recusandae ut! Alias mollitia nemo nostrum reprehenderit. Ab aut cum deleniti, dolorem ea ex, excepturi expedita illo iste maiores quia quod reiciendis sit. At consequuntur cupiditate dicta ducimus hic inventore minus molestias neque nisi obcaecati officia perferendis placeat quae quaerat quam quia quisquam repellendus, rerum sunt suscipit tempora temporibus voluptate voluptates! Beatae commodi doloribus ea ex labore officia perferendis temporibus? Accusamus ad aliquid aperiam aspernatur assumenda aut dicta dolore doloribus ex expedita explicabo facilis illum inventore ipsam labore laboriosam laborum libero maxime nobis non nulla odit officia omnis porro possimus provident quia, quis quisquam, quos reiciendis repudiandae sapiente sed tempora tempore vel velit voluptatem. Dolor ducimus eum harum illo iure porro quia? Consequatur nemo qui rem voluptate. Alias atque deserunt doloribus eligendi hic itaque molestiae obcaecati rerum similique sint! Amet, at corporis deserunt dolores earum, est eum excepturi expedita explicabo fuga labore necessitatibus nesciunt officiis pariatur saepe sed tenetur voluptas. Accusamus aliquam laborum nisi odit quos, repellendus sit sunt suscipit? A animi consequatur cupiditate dolore est eum, facere id incidunt ipsa mollitia natus perspiciatis porro quaerat quas, repudiandae sunt temporibus tenetur. Aliquam aspernatur at atque distinctio dolor eius facere illo illum inventore ipsa labore maxime neque nihil nulla obcaecati, odit, omnis pariatur possimus provident quae quidem quisquam repudiandae tempora totam ullam ut veritatis, voluptas! Aperiam aspernatur aut beatae cupiditate, delectus deserunt dicta dolores enim est excepturi illo iure nemo obcaecati odit officiis perspiciatis, quaerat quas quidem quo ratione reiciendis rem rerum sapiente ut veniam veritatis vero voluptatibus. Corporis deserunt libero, mollitia optio perspiciatis suscipit. Ab alias animi at autem consectetur consequatur, cum delectus dolores eaque eligendi explicabo fugit id impedit labore molestiae nulla obcaecati perferendis porro possimus praesentium qui quia quidem, recusandae reprehenderit, rerum saepe sed sit suscipit temporibus tenetur vitae voluptatem voluptates voluptatum. Cumque deleniti, eos excepturi explicabo harum nesciunt nisi quia repellat veritatis voluptatum! Eos error esse est incidunt natus nisi quos. At aut cumque deserunt dolore, enim exercitationem, fugit, illum incidunt inventore itaque iure nisi non nulla odio odit quia unde! Amet asperiores commodi consequatur, culpa debitis deleniti dolor facere fugit hic itaque laborum magni minima minus necessitatibus nemo nesciunt nobis, obcaecati odio, perspiciatis qui quibusdam quisquam repellat sapiente tempora temporibus veniam vero voluptates! Aliquam autem eaque enim expedita facilis in, minima modi molestias nesciunt obcaecati quod recusandae.
+
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+<!--widget-phone-->
+<div class="widget-phone hidden-xs">
+    <div class="widget-phone-circle"></div>
+    <div class="widget-phone-circle-fill"></div>
+    <div class="widget-phone-img"></div>
+    <div class="widget-phone-popup">
+        <form class="widget-phone-popup-form" action="/widgetPhoneMailer.php" method="post">
+            <div class="text">Оставьте свой номер телефона<br>и мы Вам перезвоним</div>
+            <input name="url_page" type="hidden"/>
+            <div class="item-form-element phone">
+                <input class="phone" name="widgetPhone[phone]" type="tel" placeholder="+7 (999) 123-45-67">
+                <div class="validation-informer"><span></span></div>
+            </div>
+            <a class="button" href="javascript:void(jQuery('.window.message .widget-phone-popup-form').standart_load({force:1, url:'/widgetPhoneMailer.php'} ));">Жду звонка!</a>
+        </form>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <nav class="menu-top">
+            <ul>
+                <li class="selected"><a href="#">Главная</a></li><!--
+                --><li><a href="#">Каталог</a></li><!--
+                --><li><a href="#">Информация</a></li><!--
+                --><li><a href="#">Прайс</a></li><!--
+                --> <li class="helper"></li><!-- доп элемент для выравнивания по ширине -->
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contacts">
+                    Телефон:<br>
+                    <a href="tel:+79157324044" title="Позвонить">+7 915 732 40 44</a><br>
+                    E-mail:<br>
+                    <a href="mailto:info@cms-nc.ru" title="Написать письмо">info@cms-nc.ru</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="counter">
+                    <!-- СЮДА ВСТАВЛЯЕМ КОДЫ СЧЕТЧИКОВ -->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="copyright">
+                    Разработка и продвижение сайта<br>
+                    <a href="http://mastweb.ru/" target="_blank">ООО "МастерВеб"</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--preloader-->
+<!--<div id="page-preloader"><span class="spinner"></span></div>-->
+
+<!-- scripts -->
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/jquery.slicknav.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
+<script src="/js/lib/jquery.fancybox.js"></script>
+<script src="/js/lib/jquery.standart_load.js"></script>
+<script src="/js/lib/jquery.standart_window.js"></script>
+<script src="/js/lib/jquery.standart_widgetPhone.js"></script>
+<script src="/js/app/_common.js?ver=1.0.0"></script>
+<script src="/js/app/_common_landing.js?ver=1.0.0"></script>
+<!--<script src="/js/app/_animations.js?ver=1.0.0"></script>-->
+<!-- /scripts -->
+
+</body>
+</html>

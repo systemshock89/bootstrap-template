@@ -179,10 +179,14 @@ h4, .h4 {
 
 /*---------HEADER------------*/
 header {
+
+}
+
+header .header-block{
     background: #6f5499;
 }
 
-header .container {
+header .header-block .container {
     background: #cdbfe3;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -194,6 +198,17 @@ header .logo {
 
 header .contacts {
 
+}
+
+header.stuck{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /*!*чтоб не дергался фиксированный хедер*!*/
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
 }
 /*---------/HEADER------------*/
 
