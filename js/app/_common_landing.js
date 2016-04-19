@@ -5,71 +5,18 @@
 
 $(function () {
 
-    /* Верхнее меню */
-    var navLi = $('.menu-top ul > li > a, .slicknav_nav > ul > li > a');
 
-    // Выделение активного пункта при скролле
-    $('.landing-block')
-        .waypoint( function (dir) {
-            var hash = $(this).attr('id');
-
-            if (dir === "down") { //скролл сверху вниз
-                menuItemSelect(navLi, hash);
-            }
-        }, {
-            offset: $('header').height()
-        })
-        .waypoint( function (dir) {
-            var hash = $(this).attr('id');
-
-            if (dir === "up") { //скролл снизу вверх
-                menuItemSelect(navLi, hash);
-            }
-        }, {
-            offset: function() {
-                return - $(this).outerHeight() + $('header').height();
-            }
-        });
-
-
-    //ф-я подставляет активному пункту класс selected
-    function menuItemSelect(navLi, hash){
-        navLi.parent().removeClass('selected');
-
-        $.each( navLi, function() {
-            if ( $(this).attr('href').slice(1) === hash ){
-                $(this).parent().addClass('selected');
-            }
-        });
-    }
-
-    //плавный скролл
-    function smoothScroll(){
-        var headerHeight = $('header').height();
-        navLi.click(function (e) {
-            e.preventDefault();
-
-            var elementClick = $(this).attr("href"),
-                destination = Math.round($(elementClick).offset().top),
-                offset = 0;
-
-            $('html, body').stop().animate( { scrollTop: destination - headerHeight - offset }, 800 );
-        });
-    }
-
-    smoothScroll();
+    //НОВОЕ МЕНЮ
+    var menu_offset = $('header').height();
     $(window).resize(function () {
-        smoothScroll();
+        menu_offset = $('header').height();
     });
-    /* /Верхнее меню */
+    $('.menu-top ul li a, .slicknav_menu ul li a').on('click', function(e){
+        e.preventDefault();
+        showSection($(this).attr('href'), true, menu_offset);
+    });
 
-
-    /* скролл хедера с position:fixed при маленьком размере окна */
-    //$(document).scroll(function() {
-    //    $( "header" ).css('left', -$(document).scrollLeft());
-    //});
-    /* /скролл хедера с position:fixed при маленьком размере окна */
-
+    showSection(window.location.hash, false, menu_offset);
 
     /* Прилипающий элемент */
     try {
@@ -87,4 +34,57 @@ $(function () {
     }
     /* /Прилипающий элемент */
 
+    //Возвращение в начало при клике на лого
+    $( ".logo" ).click(function(e) {
+        e.preventDefault();
+        $('body, html').animate({scrollTop: 0}, 500, function(){
+            window.location.href.substr(0, window.location.href.indexOf('#'));
+        });
+    });
+
 }); // END READY
+
+
+//НОВОЕ МЕНЮ
+$(window).scroll(function(){
+    checkSection();
+});
+
+//ф-я скролла по пунктам верхнего меню
+function showSection(section, isAnimate, menu_offset){
+    var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.landing-section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - menu_offset + 1;
+
+    if (isAnimate) {
+        $('body, html').animate({scrollTop: reqSectionPos}, 500);
+    } else {
+        $('body, html').scrollTop(reqSectionPos);
+    }
+
+}
+
+//ф-я определения, находимся ли в границах секции или нет
+function checkSection(){
+    $('.landing-section').each(function(){
+        var
+            $this = $(this),
+            topEdge = $this.offset().top - $('header').height(), // верхняя граница секции
+            bottomEdge = topEdge + $this.height(), // нижняя граница секции
+            wScroll = $(window).scrollTop(); // на сколько проскроллили страницу
+
+        if (topEdge < wScroll && bottomEdge > wScroll) { //если находимся в пределах секции
+            var
+                currentId = $this.data('section'),
+                reqLink = $('.menu-top ul li a, .slicknav_menu ul li a').filter('[href="#' + currentId + '"]');
+
+            $('.menu-top ul li, .slicknav_menu ul li').removeClass('selected');
+            reqLink.closest('li').addClass('selected');
+
+            window.location.hash = currentId;
+        }
+
+    });
+}
+

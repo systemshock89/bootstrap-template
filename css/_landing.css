@@ -7,14 +7,14 @@
 
 
 /*---------CSS 3 ANIMATES------------*/
-.landing-block{
+.landing-section{
     padding: 30px 0;
     margin-bottom: 50px;
     text-align: justify;
     background: #f6f6f6;
 }
 
-.landing-block .item{
+.landing-section .item{
     display: inline-block;
     vertical-align: middle;
     width: 300px;
@@ -23,15 +23,15 @@
     text-align: center;
 }
 
-.landing-block .item1{
+.landing-section .item1{
     background: #ffc2a8;
 }
 
-.landing-block .item2{
+.landing-section .item2{
     background: #85ffc5;
 }
 
-.landing-block .item3{
+.landing-section .item3{
     background: #bbb3ff;
 }
 
@@ -41,17 +41,17 @@
 }
 
 /* Можно указать скорость анимации и др параметры */
-.landing-block .item.fadeInDown:nth-child(1){
+.landing-section .item.fadeInDown:nth-child(1){
     -webkit-animation-duration: 0.5s;
     animation-duration:  0.5s;
 }
 
-.landing-block .item.fadeInDown:nth-child(2){
+.landing-section .item.fadeInDown:nth-child(2){
     -webkit-animation-duration: 0.8s;
     animation-duration:  0.8s;
 }
 
-.landing-block .item.fadeInDown:nth-child(3){
+.landing-section .item.fadeInDown:nth-child(3){
     -webkit-animation-duration: 1.1s;
     animation-duration:  1.1s;
 }
