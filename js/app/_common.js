@@ -396,7 +396,7 @@ $(function () {
     /* кнопка Наверх */
     toTop();
     function toTop() {
-        $('body').append('<div class="toTop hidden-xs" title="Наверх"></div>');
+        $('body').append('<div class="toTop" title="Наверх"></div>');
 
         var toTop = $('.toTop'),
             contentBlock = $('#overflow_div'), // блок с контентом сайта
@@ -577,40 +577,6 @@ var Message = function (message) { // Всплывающее сообщение 
 
     $('.window.message').standart_window();
 };
-
-
-//Баг в ie с прыгающим рывками элементом с position: fixed
-if (navigator.userAgent.match(/Trident.*rv[ :]*11\.| Edge\/12\./) || navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/MSIE 9/i)) {
-    $('body').on("mousewheel", function (e) {
-        e.preventDefault();
-
-        var wheelDelta = event.wheelDelta;
-
-        var currentScrollPosition = window.pageYOffset;
-        window.scrollTo(0, currentScrollPosition - wheelDelta);
-    });
-}
-
-
-/* Выравнивание элементов по одинаковой высоте */
-(function ($) {
-    $.fn.equalHeights = function () {
-        var $items = $(this);
-        function equalize() {
-            $items.height('initial');
-            var maxH = $items.eq(0).height();
-            $items.each(function () {
-                maxH = ($(this).height() > maxH) ? $(this).height() : maxH;
-            });
-            $items.height(maxH);
-        }
-        equalize();
-        $(window).bind('resize', function () {
-            equalize();
-        });
-    };
-})(jQuery);
-/* Выравнивание элементов по одинаковой высоте */
 
 
 //preloader

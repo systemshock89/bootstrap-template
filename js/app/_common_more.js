@@ -131,7 +131,7 @@ $(function () {
     /* selectik */
     if ($('select').is('.selectik')) {
         $('head').append("<link rel='stylesheet' type='text/css'  href='/css/selectik.css'/>");
-        $.getScript('/js/lib/jquery.mousewheel.js', function () {
+        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js', function () {
             $.getScript('/js/lib/jquery.selectik.min.js', function () {
 
                 $('select.selectik').selectik({maxItems: 8, minScrollHeight: 20});
@@ -326,7 +326,7 @@ $(function () {
 
     /* jquery.form*/
     if ($(".open-popup").is('div')) {
-        $.getScript('/js/lib/jquery.form.min.js', function () {
+        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js', function () {
         });
     }
     /* jquery.form*/
@@ -386,3 +386,38 @@ function clearInputFile(obj) {
         .parent().parent().find('input[type=file]').val('')
 }
 /* /кастомный input file */
+
+
+//Баг в ie с прыгающим рывками элементом с position: fixed
+if (navigator.userAgent.match(/Trident.*rv[ :]*11\.| Edge\/12\./) || navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/MSIE 9/i)) {
+    $('body').on("mousewheel", function (e) {
+        e.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+}
+
+
+/* Выравнивание элементов по одинаковой высоте */
+(function ($) {
+    $.fn.equalHeights = function () {
+        var $items = $(this);
+        function equalize() {
+            $items.height('initial');
+            var maxH = $items.eq(0).height();
+            $items.each(function () {
+                maxH = ($(this).height() > maxH) ? $(this).height() : maxH;
+            });
+            $items.height(maxH);
+        }
+        equalize();
+        $(window).bind('resize', function () {
+            equalize();
+        });
+    };
+})(jQuery);
+/* Выравнивание элементов по одинаковой высоте */
+

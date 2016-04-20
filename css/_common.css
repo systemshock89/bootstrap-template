@@ -17,10 +17,6 @@ body.no-adaptive .container{
     width: 1170px;
 }
 
-body.no-adaptive [class*="hidden-"]{
-    display: block!important;
-}
-
 a {
     color: #337ab7;
     text-decoration: underline;

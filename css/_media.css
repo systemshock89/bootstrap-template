@@ -69,6 +69,11 @@
         text-align: left;
     }
 
+    .toTop,
+    .widget-phone{
+        display: none;
+    }
+
     .window .window_body{
         width: 95%;
     }
