@@ -70,7 +70,8 @@
     }
 
     .toTop,
-    .widget-phone{
+    .widget-phone,
+    .path{
         display: none;
     }
 

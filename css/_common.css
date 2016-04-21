@@ -230,7 +230,7 @@ header.stuck{
 }
 
 /* Обнуляем шрифт и line-height у родителя*/
-.menu-top > ul {
+.menu-top ul.level1 {
     text-align: justify;
     line-height: 0;
     font-size: 1px;
@@ -244,7 +244,7 @@ header.stuck{
     overflow: hidden;
 }
 
-.menu-top > ul > li {
+.menu-top ul.level1 > li {
     display: inline-block;
     position: relative;
     z-index: 2;
@@ -257,7 +257,7 @@ header.stuck{
     vertical-align: top;
 }
 
-.menu-top > ul > li > ul {
+.menu-top ul.level2 {
     display: none;
     position: absolute;
     min-width: 100%;
@@ -265,26 +265,25 @@ header.stuck{
     white-space: nowrap;
 }
 
-.menu-top > ul > li:hover > ul {
-    display: block;
+.menu-top ul.level1 > li:hover ul.level2 {
+    display: block!important;
 }
-
 /*---------/core menu top------------*/
 
 /*---------1 level menu-top------------*/
-.menu-top > ul > li {
+.menu-top ul.level1 > li {
 
 }
 
-.menu-top > ul > li:hover > a {
+.menu-top ul.level1 > li:hover > a {
     background-color: #e7e7e7;
 }
 
-.menu-top > ul > li.selected > a {
+.menu-top ul.level1 > li.selected > a {
     background-color: #e7e7e7;
 }
 
-.menu-top > ul > li > a {
+.menu-top ul.level1 > li > a {
     display: block;
     padding: 15px;
     color: #555;
@@ -293,27 +292,27 @@ header.stuck{
 /*---------/1 level menu-top------------*/
 
 /*---------2 level menu-top------------*/
-.menu-top > ul > li > ul {
+.menu-top ul.level2 {
     background-color: #f8f8f8;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
-.menu-top > ul > li > ul > li {
+.menu-top ul.level2 > li {
 
 }
 
-.menu-top > ul > li > ul > li > a {
+.menu-top ul.level2 > li > a {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
     color: #555;
 }
 
-.menu-top > ul > li > ul > li.selected > a {
+.menu-top ul.level2 > li.selected > a {
     background-color: #e7e7e7;
 }
 
-.menu-top > ul > li > ul > li > a:hover {
+.menu-top ul.level2 > li > a:hover {
     background-color: #e7e7e7;
 }
 /*---------/2 level menu-top------------*/
@@ -332,15 +331,15 @@ header.stuck{
 }
 
 /*--------- 1 level vertical-menu------------*/
-.vertical-menu > ul {
+.vertical-menu ul.level1 {
 
 }
 
-.vertical-menu > ul > li {
+.vertical-menu ul.level1 > li {
     margin-bottom: 10px;
 }
 
-.vertical-menu > ul > li > a {
+.vertical-menu ul.level1 > li > a {
     position: relative;
     display: block;
     border-radius: 6px;
@@ -350,30 +349,30 @@ header.stuck{
     text-decoration: none;
 }
 
-.vertical-menu > ul > li.active > a {
+.vertical-menu ul.level1 > li.active > a {
     background-color: #e7e7e7;
 }
 
-.vertical-menu > ul > li > a:hover {
+.vertical-menu ul.level1 > li > a:hover {
     background-color: #e7e7e7;
 }
 
-.vertical-menu > ul > li.selected > a {
+.vertical-menu ul.level1 > li.selected > a {
     background: #555;
     color: #fff;
 }
 /*---------/ 1 level vertical-menu------------*/
 
 /*--------- 2 level vertical-menu------------*/
-.vertical-menu > ul > li > ul {
+.vertical-menu ul.level2 {
     margin-left: 20px;
 }
 
-.vertical-menu > ul > li > ul > li {
+.vertical-menu ul.level2 > li {
     margin: 10px 0;
 }
 
-.vertical-menu > ul > li > ul > li > a {
+.vertical-menu ul.level2 > li > a {
     position: relative;
     display: block;
     border-radius: 6px;
@@ -383,11 +382,11 @@ header.stuck{
     text-decoration: none;
 }
 
-.vertical-menu > ul > li > ul > li > a:hover {
+.vertical-menu ul.level2 > li > a:hover {
     background: #e7e7e7;
 }
 
-.vertical-menu > ul > li > ul > li.selected > a {
+.vertical-menu ul.level2 > li.selected > a {
     background: #555;
     color: #fff;
 }
