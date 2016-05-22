@@ -411,26 +411,31 @@ header.stuck{
 /*---------/VERTICAL MENU------------*/
 
 
-/*---------PATH------------*/
-.path {
-    margin-bottom: 20px;
+/*---------BREADCRUMB------------*/
+.breadcrumb {
+    padding: 0;
+    margin:0 0 20px 0;
+    list-style:none;
 }
 
-.path a {
+.breadcrumb li{
+    display: inline-block;
+}
+
+.breadcrumb li a {
 
 }
 
-.path .separator {
+.breadcrumb li.separator {
     display: inline-block;
     color: #666666;
+    margin: 0 5px;
 }
 
-.path span.selected {
+.breadcrumb li.active {
     color: #666666;
-    text-decoration: none;
-    cursor: default;
 }
-/*---------/PATH------------*/
+/*---------/BREADCRUMB------------*/
 
 
 /*---------INDEX OWL SLIDER------------*/

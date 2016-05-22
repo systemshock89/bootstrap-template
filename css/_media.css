@@ -71,8 +71,8 @@
 
     .toTop,
     .widget-phone,
-    .path{
-        display: none!important;
+    .breadcrumb{
+        display: none;
     }
 
     .window .window_body{
