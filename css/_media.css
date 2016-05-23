@@ -72,7 +72,7 @@
     .toTop,
     .widget-phone,
     .breadcrumb{
-        display: none;
+        display: none!important;
     }
 
     .window .window_body{
