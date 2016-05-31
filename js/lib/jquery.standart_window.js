@@ -2,7 +2,7 @@
  * @author A1exandr Belikh
  * @email zimovchanin@gmail.com
  * @description Простое всплывающее окно
- * version: 1.0.0
+ * version: 1.0.1
  *
  * Создан 27.02.2014 Позволит создавать всплывающие окна для форм и т.п. ( 0JHQtdC70YvRhSDQkNC70LXQutGB0LDQvdC00YAg0KHQtdGA0LPQtdC10LLQuNGHIHppbW92Y2hhbmluQGdtYWlsLmNvbQ== )
  */
@@ -36,7 +36,7 @@ jQuery.fn.standart_window = function(options){
         $this.css( { position:"fixed" , left:0 , top:0 } );
 
         // добавляем размытие
-        $this.siblings(":not(script)").addClass('blur');
+        $('#overflow_div, footer').addClass('blur');
 
         /* Скрытие */
         $close.click(function(){
@@ -82,7 +82,7 @@ function  closePopup($this){
         $this.closest('.window').hide();
     }, 200);
 
-    $("*").removeClass('blur');  // убираем размытие
+    $('#overflow_div, footer').removeClass('blur'); // убираем размытие
 
 }
 /* d5b8675f7f6f9cfa7c296c91eb970dd2 */

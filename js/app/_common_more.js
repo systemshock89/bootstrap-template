@@ -421,3 +421,12 @@ if (navigator.userAgent.match(/Trident.*rv[ :]*11\.| Edge\/12\./) || navigator.u
 })(jQuery);
 /* Выравнивание элементов по одинаковой высоте */
 
+
+//preloader
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(400).fadeOut('slow');
+});
+

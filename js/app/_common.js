@@ -1,6 +1,6 @@
 ﻿/**
  * @description Основные скрипты
- * version: 1.0.0
+ * version: 1.0.1
  */
 
 $(function () {
@@ -41,7 +41,7 @@ $(function () {
     /* Адаптивное верхнее меню */
     try {
         $('.menu-top').eq(0).slicknav({
-            label: 'МЕНЮ',
+            label: '',
             prependTo: '.menu-top-container',
             closeOnClick:true,
             allowParentLinks: true
@@ -293,7 +293,7 @@ $(function () {
         }
     }(jQuery));
 
-    $('.content-wraper .container p img').each(function(){
+    $('.content-wrapper .container p img').each(function(){
         if(
             //$(this).attr('style').indexOf('width:') != -1 &&
             $(this).attr('style').indexOf('max-width:') == -1 &&
@@ -351,10 +351,10 @@ $(function () {
                 },
                 // размытие
                 beforeLoad: function() {
-                    $('html').find("body >:not([id^='fancybox-'])").addClass('blur');
+                    $('#overflow_div, footer').addClass('blur');
                 },
                 beforeClose: function() {
-                    $('html').find("body >:not([id^='fancybox-'])").removeClass('blur');
+                    $('#overflow_div, footer').removeClass('blur');
                 }
             });
 
@@ -577,15 +577,6 @@ var Message = function (message) { // Всплывающее сообщение 
 
     $('.window.message').standart_window();
 };
-
-
-//preloader
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(400).fadeOut('slow');
-});
 
 
 //Скрипт добавления ссылки на источник при копировании

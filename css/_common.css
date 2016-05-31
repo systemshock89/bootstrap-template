@@ -1,4 +1,4 @@
-/* version: 1.0.1 */
+/* version: 1.0.2 */
 
 /*---------STANDARD STYLES------------*/
 html {
@@ -82,7 +82,7 @@ th {
     overflow: hidden;
 }
 
-.content-wraper {
+.content-wrapper {
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -175,15 +175,10 @@ h4, .h4 {
 
 /*---------HEADER------------*/
 header {
-
-}
-
-header .header-block{
-    background: #6f5499;
-}
-
-header .header-block .container {
     background: #cdbfe3;
+}
+
+header .header-desktop{
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1188,6 +1183,7 @@ textarea.error:focus, .item-form-element.error textarea:focus {
     border-radius: 4px;
     background: #FFF7BD;
     text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
 .item-form-element .validation-informer span:before {
@@ -1203,6 +1199,19 @@ textarea.error:focus, .item-form-element.error textarea:focus {
     border-bottom: 10px solid #FFF7BD;
 }
 
+.item-form-element.tovar .item{
+    display: inline-block;
+}
+
+.item-form-element.tovar .item .img-container img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.item-form-element.tovar .item .title-tovar{
+    margin-top: 10px;
+}
+
 form .status_message {
     display: none;
     margin: 10px 0;
@@ -1210,25 +1219,6 @@ form .status_message {
     border-radius: 5px;
     border: 1px solid #F0F0B0;
     background: #FFF7BD;
-}
-
-/*форма заказа товара*/
-.form-zakaz-item {
-    text-align: center;
-    display: inline-block;
-}
-
-.form-zakaz-item .img-container {
-    display: inline-block;
-}
-
-.form-zakaz-item .img-container img {
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.form-zakaz-item .title-tovar {
-    margin-top: 10px;
 }
 /*---------/FORM------------*/
 
@@ -1921,6 +1911,17 @@ a.fancybox-thumb:hover .img-container:before {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+/*owl-carousel chrome visual bug fix*/
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    /*-webkit-backface-visibility: hidden;*/
+    /*-moz-backface-visibility:    hidden;*/
+    /*-ms-backface-visibility:     hidden;*/
+    /*-webkit-transform: translate3d(0,0,0);*/
+    /*-moz-transform: translate3d(0,0,0);*/
+    /*-ms-transform: translate3d(0,0,0);*/
 }
 /*---------/OTHER STYLES------------*/
 
