@@ -232,11 +232,13 @@ header.stuck{
 }
 
 /* доп элемент для выравнивания по ширине */
-.menu-top li.helper {
+.menu-top ul.level1:after {
     width: 100%;
-    height: 0;
+    height: 0px;
     visibility: hidden;
     overflow: hidden;
+    content: '';
+    display: inline-block;
 }
 
 .menu-top ul.level1 > li {
