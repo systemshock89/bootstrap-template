@@ -1,7 +1,7 @@
 /* version: 1.0.1 */
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
 
 
 
@@ -9,7 +9,7 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
 
     .window .window_body{
         width: 90%;
@@ -39,7 +39,7 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 
     #overflow_div{
         margin-top: 50px;
