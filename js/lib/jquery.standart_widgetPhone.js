@@ -1,7 +1,7 @@
 /**
  * @author Serega K.
  * @description Виджет сбора номера телефона и URL страницы, на которой находится клиент
- * version: 0.0.5
+ * version: 0.0.6
  *
  */
 jQuery.fn.standart_widgetPhone = function(options){
@@ -10,7 +10,7 @@ jQuery.fn.standart_widgetPhone = function(options){
 		popupTimer: 45000, // таймер ,по истечении которого автоматически вызовется попап
 		widgetTimer: 4000, // таймер ,по истечении которого появится виджет
 		cookieTimer: 1, // таймер действия куки (в сутках)
-        contentBlock: $('#overflow_div'), // блок с контентом сайта (для позиционирования виджета)
+        contentBlock: $('.container'), // блок с контентом сайта (для позиционирования виджета)
         widgetPhoneOffset: -10 // отступ виджета от контента в px
 	},options);
 
@@ -108,12 +108,7 @@ jQuery.fn.standart_widgetPhone = function(options){
         }
         function toTopPosition() {
             documentWidth = $(document).width();
-
-            if ( parseInt(options.contentBlock.css('minWidth')) == 0 ){
-                contentBlockWidth = parseInt(options.contentBlock.css('width'));
-            } else{
-                contentBlockWidth = parseInt(options.contentBlock.css('minWidth'));
-            }
+            contentBlockWidth = options.contentBlock.width();
 
             contentOfsetLeft = (documentWidth - contentBlockWidth)/2;
 

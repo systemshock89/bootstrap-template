@@ -253,7 +253,7 @@ $(function () {
 
     /* placeholder */
     if ($('input').attr('placeholder') || $('textarea').attr('placeholder')) {
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.0/jquery.placeholder.min.js', function () {
+        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js', function () {
 
             $('input[placeholder], textarea[placeholder]').placeholder();
 
@@ -399,7 +399,7 @@ $(function () {
         $('body').append('<div class="toTop" title="Наверх"></div>');
 
         var toTop = $('.toTop'),
-            contentBlock = $('#overflow_div'), // блок с контентом сайта
+            contentBlock = $('.container'), // блок с контентом сайта
             toTopOffset = 30, // отступ кнопки от контента в px
             documentWidth,
             contentBlockWidth,
@@ -441,11 +441,8 @@ $(function () {
         }
         function toTopPosition() {
             documentWidth = $(document).width();
-            if (contentBlock.css('minWidth') == '0px') {
-                contentBlockWidth = parseInt(contentBlock.css('width'));
-            } else {
-                contentBlockWidth = parseInt(contentBlock.css('minWidth'));
-            }
+            contentBlockWidth = contentBlock.width();
+
             contentOfsetLeft = (documentWidth - contentBlockWidth) / 2;
 
             if (documentWidth <= (contentBlockWidth + (toTopOffset + toTopWidth) * 2 )) {
