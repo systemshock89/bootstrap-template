@@ -18,7 +18,7 @@ $(function () {
     $(".row .item").each(function () {
         var cur_img = $(this).find('img').attr('src');
         if (cur_img == "")
-            $(this).find('img').attr({'src': '/img/empty_icon.png'});
+            $(this).find('img').attr({'src': 'img/empty_icon.png'});
     });
     /* /Картинка для элемента по дефолту */
 
