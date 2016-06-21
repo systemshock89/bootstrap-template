@@ -1,4 +1,4 @@
-/* version: 1.0.2 */
+/* version: 1.0.3 */
 
 /*---------STANDARD STYLES------------*/
 html {
@@ -269,6 +269,17 @@ header.stuck{
 .menu-top ul.level1 > li:hover ul.level2 {
     display: block!important;
 }
+
+.menu-top ul.level3{
+    display: none;
+    top: 0;
+    left: 100%;
+    position: absolute;
+}
+
+.menu-top ul.level2 > li:hover ul.level3{
+    display: block!important;
+}
 /*---------/core menu top------------*/
 
 /*---------1 level menu-top------------*/
@@ -303,7 +314,7 @@ header.stuck{
 }
 
 .menu-top ul.level2 > li {
-
+    position: relative;
 }
 
 .menu-top ul.level2 > li > a {
@@ -321,6 +332,31 @@ header.stuck{
     background-color: #e7e7e7;
 }
 /*---------/2 level menu-top------------*/
+/*---------3 level menu-top------------*/
+.menu-top ul.level3 {
+    background-color: #f8f8f8;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.menu-top ul.level3 > li {
+    position: relative;
+}
+
+.menu-top ul.level3 > li > a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: #555;
+}
+
+.menu-top ul.level3 > li.selected > a {
+    background-color: #e7e7e7;
+}
+
+.menu-top ul.level3 > li > a:hover {
+    background-color: #e7e7e7;
+}
+/*---------/3 level menu-top------------*/
 /*---------/MENU-TOP------------*/
 
 
