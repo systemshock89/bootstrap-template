@@ -1,6 +1,6 @@
 ﻿/**
  * @description Основные скрипты
- * version: 1.0.1
+ * version: 1.0.2
  */
 
 $(function () {
@@ -71,6 +71,7 @@ $(function () {
                 autoplay: true,
                 autoplayTimeout: 12000,
                 autoplayHoverPause: true,
+                lazyLoad:true,
                 nav: true,
                 navText:  [
                     "",
@@ -98,6 +99,7 @@ $(function () {
                 autoplay: true,
                 autoplayTimeout: 12000,
                 autoplayHoverPause: true,
+                lazyLoad:true,
                 navText:  [
                     "",
                     ""
