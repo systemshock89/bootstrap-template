@@ -2,6 +2,26 @@
 
 /*---------LANDING PAGE STYLES------------*/
 
+/*fullpage.js styles*/
+#fp-nav{
+    display: none;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: #555;
+}
+
+.iScrollIndicator{
+    cursor: pointer;
+}
+
+#fullpage .section{
+    padding-top: 169px;
+}
+
+#fullpage footer.section{
+    padding-top: 0;
+}
 /*---------/LANDING PAGE STYLES------------*/
 
 

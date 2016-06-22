@@ -291,7 +291,8 @@ header.stuck{
     background-color: #e7e7e7;
 }
 
-.menu-top ul.level1 > li.selected > a {
+.menu-top ul.level1 > li.selected > a,
+.menu-top ul.level1 > li.active > a{
     background-color: #e7e7e7;
 }
 

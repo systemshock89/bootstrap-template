@@ -19,7 +19,9 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-
+    #fullpage .section{
+        padding-top: 50px;
+    }
 
 }
 
