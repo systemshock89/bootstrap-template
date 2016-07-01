@@ -920,6 +920,10 @@ header.stuck{
     opacity: 1;
 }
 
+.synced_slider2 .owl-item.loading{
+    min-height: 92px;
+}
+
 /*owl-nav*/
 .synced_slider2 .owl-theme .owl-controls{
     margin-top: 0;

@@ -166,7 +166,8 @@ $(function () {
             responsiveRefreshRate: 200,
             responsiveBaseWidth : $('#overflow_div'),
             touchDrag: false,
-            mouseDrag: false
+            mouseDrag: false,
+            lazyLoad : true
         });
 
         sync2.owlCarousel({
@@ -177,6 +178,7 @@ $(function () {
             itemsMobile: [480, 2],
             pagination: false,
             navigation: true,
+            lazyLoad : true,
             responsiveRefreshRate: 100,
             responsiveBaseWidth : $('#overflow_div'),
             afterInit: function (el) {
