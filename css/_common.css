@@ -10,6 +10,7 @@ body{
     font-family: 'Roboto', serif;
     font-size: 14px;
     color: #333;
+    min-width: 320px;
 }
 
 body.no-adaptive .container{
@@ -870,7 +871,7 @@ header.stuck{
 
 /*---------TOVAR OWL SLIDER------------*/
 .synced_slider1 {
-
+    margin-bottom: 20px;
 }
 
 .synced_slider1 .owl-carousel .item {
@@ -886,7 +887,6 @@ header.stuck{
 }
 
 .synced_slider2 {
-    margin-top: 15px;
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 20px;
@@ -925,12 +925,20 @@ header.stuck{
 }
 
 /*owl-nav*/
-.synced_slider2 .owl-theme .owl-controls{
+.synced_slider1 .owl-theme .owl-controls{
     margin-top: 0;
 }
 
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-prev,
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-next{
+.synced_slider1 .owl-theme .owl-controls .owl-pagination{
+    display: none;
+}
+
+.synced_slider1 .owl-theme .owl-controls{
+    margin-top: 0;
+}
+
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-prev,
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-next{
     width: 28px;
     height: 44px;
     cursor: pointer;
@@ -950,32 +958,32 @@ header.stuck{
     z-index: 1;
 }
 
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-prev{
-    left: -20px;
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: -30px;
     background-position: 0 0;
 }
 
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-next{
-    right: -20px;
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-next{
+    right: -30px;
     background-position: -28px 0;
 }
 
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-prev:hover,
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-next:hover{
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-prev:hover,
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-next:hover{
     opacity: 1;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
 }
 
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-prev:active,
-.synced_slider2 .owl-theme .owl-controls .owl-buttons .owl-next:active{
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-prev:active,
+.synced_slider1 .owl-theme .owl-controls .owl-buttons .owl-next:active{
     opacity: 0.8;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
 }
 
-.synced_slider2 .owl-controls .owl-buttons div,
-.synced_slider2 .owl-controls .owl-buttons div:hover{
+.synced_slider1 .owl-controls .owl-buttons div,
+.synced_slider1 .owl-controls .owl-buttons div:hover{
     -webkit-transition: opacity 0.1s ease-in-out;
     -moz-transition: opacity 0.1s ease-in-out;
     -o-transition: opacity 0.1s ease-in-out;
@@ -1487,11 +1495,16 @@ form .status_message {
 .price-table td.row1 {
     text-align: left;
     padding: 0;
+    min-width: 350px;
 }
 
 .price-table td.row1 > a{
     padding: 8px;
     display: block;
+}
+
+.price-table td.row2{
+    min-width: 150px;
 }
 
 .price-table td table{

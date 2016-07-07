@@ -109,21 +109,22 @@ $(function () {
                 responsive:{
                     0:{
                         items:1,
-                        margin: 5,
+                        margin: 15,
                         nav: false,
                         dots: true,
-                        stagePadding: 25,
+                        stagePadding: 35,
                         loop: true
                     },
                     768:{
-                        items: 3,
-                        margin: 10,
+                        items: 2,
+                        margin: 30,
                         nav: true,
-                        rewind:true
+                        rewind:true,
+                        dots: true
                     },
                     1170:{
                         items: 4,
-                        margin: 10,
+                        margin: 30,
                         nav: true,
                         rewind:true
                     }
@@ -160,8 +161,8 @@ $(function () {
             autoPlay: 12000,
             stopOnHover: true,
             slideSpeed: 1000,
-            navigation: false,
-            pagination: false,
+            navigation: true,
+            pagination: true,
             afterAction: syncPosition,
             responsiveRefreshRate: 200,
             responsiveBaseWidth : $('#overflow_div'),
@@ -177,7 +178,7 @@ $(function () {
             itemsTablet: [768, 2],
             itemsMobile: [480, 2],
             pagination: false,
-            navigation: true,
+            navigation: false,
             lazyLoad : true,
             responsiveRefreshRate: 100,
             responsiveBaseWidth : $('#overflow_div'),
