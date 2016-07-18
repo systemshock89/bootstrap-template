@@ -202,7 +202,7 @@ header .logo {
 }
 
 header .contacts {
-
+    font-style: normal;
 }
 
 header.stuck{
@@ -1881,7 +1881,7 @@ footer .row{
 }
 
 footer .contacts {
-
+    font-style: normal;
 }
 
 footer .counter {
