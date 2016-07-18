@@ -3,7 +3,7 @@
 /*---------STANDARD STYLES------------*/
 html {
     position: relative;
-    min-height: 100%;
+    height: 100%;
 }
 
 body{
@@ -11,6 +11,7 @@ body{
     font-size: 14px;
     color: #333;
     min-width: 320px;
+    height: 100%;
 }
 
 body.no-adaptive .container{
@@ -25,6 +26,12 @@ body.no-adaptive #overflow_div{
 
 #overflow_div {
     overflow: hidden;
+    min-height: 100%;
+}
+
+#overflow_div:after {
+    content: "";
+    display: block;
 }
 
 .content-wrapper {
@@ -1851,20 +1858,21 @@ form .status_message {
 /*---------FOOTER------------*/
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 150px;
     background-color: #f5f5f5;
     overflow: hidden;
 }
 
-body.no-adaptive footer{
-    min-width: 1170px;
+footer, #overflow_div:after {
+    height: 150px;
 }
 
-body {
-    margin-bottom: 150px;
+#overflow_div{
+    margin-bottom: -150px;
+}
+
+body.no-adaptive footer{
+    min-width: 1170px;
 }
 
 footer .row{
