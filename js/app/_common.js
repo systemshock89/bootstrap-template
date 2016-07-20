@@ -471,6 +471,7 @@ $(function () {
     }
     /* /WIDGET PHONE */
 
+
     /* FAQ MINI */
     $('.faq-mini .item').click(function(e) {
         e.preventDefault();
