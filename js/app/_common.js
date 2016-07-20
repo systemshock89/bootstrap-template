@@ -471,6 +471,14 @@ $(function () {
     }
     /* /WIDGET PHONE */
 
+    /* FAQ MINI */
+    $('.faq-mini .item').click(function(e) {
+        e.preventDefault();
+        $(this).find('.answer').slideToggle();
+        $(this).toggleClass('selected');
+    });
+    /* /FAQ MINI */
+
 
     /* КАРТА YANDEX*/
     try {

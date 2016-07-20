@@ -1464,6 +1464,48 @@ form .status_message {
 .faq.nc-form input[type='email']{
     width: 350px;
 }
+
+.faq-mini .item{
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.faq-mini .item .question{
+    background: #f8f8f8;
+}
+
+.faq-mini .item.selected .question{
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-mini .item .question a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px;
+}
+
+.faq-mini .item .question a span{
+    border-bottom: 1px dashed #333;
+}
+
+.faq-mini .item .question a:hover,
+.faq-mini .item.selected .question a{
+    background-color: #e7e7e7
+}
+
+.faq-mini .item .question a:hover span{
+    border-bottom: 1px dashed transparent;
+}
+
+.faq-mini .item .answer{
+    display: none;
+    padding: 15px 15px 15px 35px;
+}
+
+.faq-mini .item:first-child .answer{
+    display: block;
+}
 /*---------/FAQ------------*/
 
 
