@@ -16,7 +16,7 @@ $(function () {
 
     $('#fullpage').fullpage({
         menu: '#menu',
-        lockAnchors:true,
+        // lockAnchors:true,
         anchors: anchorsArr,
         sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         scrollOverflow: true,

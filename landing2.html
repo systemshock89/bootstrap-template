@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://bootstrap-template/">
+    <title>Landing Page - fullpage.js</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts Loader from fonts.css (HTML5 LocalStorage) -->
+    <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)} var bases=document.getElementsByTagName("base"),baseHref="";bases.length>0&&(baseHref=bases[0].href); var o=baseHref+"css/_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/slicknav.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/_common.css?ver=1.0.0">
+    <link rel="stylesheet" href="css/_media.css?ver=1.0.0">
+
+    <link rel="stylesheet" href="css/_landing.css?ver=1.0.0">
+    <link rel="stylesheet" href="css/_landing_media.css?ver=1.0.0">
+</head>
+
+<body>
+
+<!--header-->
+<header class="stuck">
+    <div class="header-desktop container hidden-xs">
+        <div class="row">
+
+            <div class="col-sm-4">
+                <a class="logo" href="/" title="На Главную"><img src="img/logo.png" alt="" class="img-responsive"/></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="button" href="#">Отправить заявку</a>
+            </div>
+
+            <div class="col-sm-4">
+                <address class="contacts">
+                    Телефон:<br>
+                    <a href="tel:+79157324044" class="phone" title="Позвонить">+7 915 732 40 44</a><br>
+                    <a href="tel:+79157324044" class="phone" title="Позвонить">+7 915 732 40 44</a><br>
+                    E-mail:  <a href="mailto:info@cms-nc.ru" class="email" title="Написать письмо">info@cms-nc.ru</a>
+                    <div class="adress">Адрес: Третья улица Строителей, д.25, кв.15</div>
+                </address>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-mobile visible-xs">
+        <a class="logo" href="/" title="На Главную"><img src="img/logo.png" alt=""/></a>
+        <a href="tel:+79157324044" class="phone">+7 915 732 40 44</a>
+        <a href="#" class="header-mobile-button"></a>
+    </div>
+
+    <!--menu-top-->
+    <div class="menu-top-container">
+        <div class="container ">
+            <nav class="menu-top">
+                <ul class="level1" id="menu">
+                    <li data-menuanchor="section1" class="active"><a href="landing2.html#section1">Секция 1</a></li>
+                    <li data-menuanchor="section2"><a href="landing2.html#section2">Секция 2</a></li>
+                    <li data-menuanchor="section3"><a href="landing2.html#section3">Секция 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<!--content-->
+<div id="fullpage">
+
+    <section class="section section-to-top" data-tooltip="Секция 1" data-anchor="section1">
+        <div class="container">
+            <div class="h1">Секция 1 - Текст сверху</div>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid amet autem beatae consequatur eveniet excepturi magni nam non ut?
+        </div>
+    </section>
+
+    <section class="section" data-tooltip="Секция 2" data-anchor="section2">
+        <div class="container">
+            <div class="h1">Тест не помещается в экран</div>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eos exercitationem harum maiores officiis quam quasi reprehenderit, sed velit. Aperiam assumenda cum delectus distinctio dolore ex excepturi exercitationem impedit incidunt ipsa ipsum libero magnam modi molestias mollitia nam natus non odit placeat, quis quisquam quos recusandae sequi sint tempore totam velit vitae. Ab ad, cupiditate deserunt doloremque eligendi eveniet harum, impedit nisi nobis odit optio quaerat suscipit unde, vel veritatis! Ad aut autem blanditiis corporis doloremque, esse fuga id illo officiis quaerat quibusdam quis quod quos repellendus sapiente unde vero. Accusamus culpa obcaecati officiis quibusdam tempora. Non, quis, repellat!<br>
+                &nbsp;</p>
+        </div>
+    </section>
+
+    <section class="section" data-tooltip="Секция 3" data-anchor="section3">
+        <div class="container">
+
+            <div class="h1">Секция 3 - Текст по центру</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eos eveniet facilis molestiae nihil quasi quia sunt vel voluptatem!
+
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer class="section fp-auto-height" data-tooltip="Футер" data-anchor="footer">
+        <div class="container">
+            <nav class="menu-top">
+                <ul class="level1">
+                    <li class="selected"><a href="#">Главная</a></li><!--
+                --><li><a href="#">Каталог</a></li><!--
+                --><li><a href="#">Информация</a></li><!--
+                --><li><a href="#">Прайс</a></li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="col-sm-4">
+                    <address class="contacts">
+                        Телефон:<br>
+                        <a href="tel:+79157324044" class="phone" title="Позвонить">+7 915 732 40 44</a><br>
+                        E-mail:<br>
+                        <a href="mailto:info@cms-nc.ru" class="email" title="Написать письмо">info@cms-nc.ru</a>
+                    </address>
+                </div>
+                <div class="col-sm-4">
+                    <div class="counter">
+                        <!-- СЮДА ВСТАВЛЯЕМ КОДЫ СЧЕТЧИКОВ -->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="copyright">
+                        Разработка и продвижение сайта<br>
+                        <a href="http://mastweb.ru/" target="_blank">ООО "МастерВеб"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+<!--widget-phone-->
+<div class="widget-phone">
+    <div class="widget-phone-circle"></div>
+    <div class="widget-phone-circle-fill"></div>
+    <div class="widget-phone-img"></div>
+    <div class="widget-phone-popup">
+        <form class="widget-phone-popup-form" action="widgetPhoneMailer.php" method="post">
+            <div class="text">Оставьте свой номер телефона<br>и мы Вам перезвоним</div>
+            <input name="url_page" type="hidden"/>
+            <div class="item-form-element phone">
+                <input class="phone" name="widgetPhone[phone]" type="tel" placeholder="+7 (999) 123-45-67">
+                <div class="validation-informer"><span></span></div>
+            </div>
+            <a class="button" href="javascript:void(jQuery('.window.message .widget-phone-popup-form').standart_load({force:1, url:'widgetPhoneMailer.php'} ));">Жду звонка!</a>
+        </form>
+    </div>
+</div>
+
+<!--preloader-->
+<!--<div id="page-preloader"><span class="spinner"></span></div>-->
+
+<!-- scripts -->
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/jquery.slicknav.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
+<script src="js/lib/jquery.malihu.PageScroll2id.min.js"></script>
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/lib/jquery.standart_load.js"></script>
+<script src="js/lib/jquery.standart_window.js"></script>
+<script src="js/lib/jquery.standart_widgetPhone.js"></script>
+<script src="js/app/_common.js?ver=1.0.0"></script>
+<script src="js/app/_common_landing.js?ver=1.0.0"></script>
+<!--<script src="/js/app/_animations.js?ver=1.0.0"></script>-->
+<!-- /scripts -->
+
+</body>
+</html>

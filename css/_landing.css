@@ -15,8 +15,16 @@
     cursor: pointer;
 }
 
+#fullpage .section.section-to-top .fp-tableCell{
+    display: block;
+}
+
 #fullpage .section{
     padding-top: 169px;
+}
+
+#fullpage .section.section-to-top{
+
 }
 
 #fullpage footer.section{

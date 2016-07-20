@@ -23,6 +23,18 @@
         padding-top: 50px;
     }
 
+    #fullpage .section.section-to-top{
+
+    }
+
+    #fp-nav.right{
+        right: 0;
+    }
+
+    #fp-nav ul li .fp-tooltip.right{
+        display: none;
+    }
+
 }
 
 
