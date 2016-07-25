@@ -474,9 +474,18 @@ $(function () {
 
     /* FAQ MINI */
     $('.faq-mini .item').click(function(e) {
+
+        var faq_mini_item_this = $(this);
         e.preventDefault();
-        $(this).find('.answer').slideToggle();
-        $(this).toggleClass('selected');
+
+        if ( !faq_mini_item_this.hasClass('selected') ){
+            faq_mini_item_this.find('.answer').slideToggle();
+            faq_mini_item_this.toggleClass('selected');
+        } else {
+            faq_mini_item_this.find('.answer').slideUp(function() {
+                faq_mini_item_this.toggleClass('selected');
+            });
+        }
     });
     /* /FAQ MINI */
 

@@ -1466,6 +1466,10 @@ form .status_message {
 }
 
 /*faq-mini*/
+.faq-mini{
+    margin-top: 20px;
+}
+
 .faq-mini .item{
     border: 1px solid #ddd;
     margin-bottom: 5px;
@@ -1502,10 +1506,6 @@ form .status_message {
 .faq-mini .item .answer{
     display: none;
     padding: 15px 15px 15px 35px;
-}
-
-.faq-mini .item:first-child .answer{
-    display: block;
 }
 /*---------/FAQ------------*/
 
