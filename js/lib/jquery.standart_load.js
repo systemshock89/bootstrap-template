@@ -2,7 +2,7 @@
  * @author Alexandr Belikh
  * @email zimovchanin@gmail.com
  * @description Общение с сервером
- * version: 0.0.3
+ * version: 0.0.4
  *
  * Создан 19.03.2014 Позволяет удобно общаться с сервером. Отправляет пост запрос, получает ответ в формате json ( 0JHQtdC70YvRhSDQkNC70LXQutGB0LDQvdC00YAg0KHQtdGA0LPQtdC10LLQuNGHIHppbW92Y2hhbmluQGdtYWlsLmNvbQ== )
  */
@@ -19,8 +19,13 @@ jQuery.fn.standart_load = function(options){
 				for( i in data ) {
 					jQuery(i).html(data[i]);
 				}
+				sc_ = sc_.replace(/\/\/.*\n/g, "");
+				sc_ = sc_.replace(/\/\/.*\r/g, "");
+				sc_ = sc_.replace(/\n/g, "");
+				sc_ = sc_.replace(/\r/g, "");
+				sc_ = sc_.replace(/\t/g, "");
 				eval(sc_);
-			},
+		},
 		data:false,/* Данные */
 		force:false, /* Насильная отправка без ожидания события */
 	},options);
